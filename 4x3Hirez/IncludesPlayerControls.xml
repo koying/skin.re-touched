@@ -1105,6 +1105,14 @@
 					</control>
 					<control type="button">
 						<include>ButtonCommonValues2</include>
+						<label>21445</label>
+						<onclick>Dialog.Close(VideoOSD,true)</onclick>
+						<onclick>Skin.Reset(PlayerControlsSubMenuVisible)</onclick>
+						<onclick>CodecInfo</onclick>
+						<visible>Window.IsVisible(FullScreenVideo)</visible>
+					</control>
+					<control type="button">
+						<include>ButtonCommonValues2</include>
 						<label>31355</label>
 						<onclick>PlayerControl(ShowVideoMenu)</onclick>
 						<visible>VideoPlayer.HasMenu</visible>
