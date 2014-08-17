@@ -59,6 +59,8 @@
 				<font>font16</font>
 				<align>center</align>
 				<aligny>center</aligny>
+				<texturenofocus>-</texturenofocus>
+				<texturefocus>-</texturefocus>
 			</control>
 			<control type="label" id="311">
 				<description>dialog Heading</description>
