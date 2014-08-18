@@ -898,6 +898,16 @@
 			<visible>!Skin.HasSetting(HideHomeButtonPrograms)</visible>
 		</item>
 	</include>
+	<include name="KeyboardButton">
+		<width>80</width>
+		<height>80</height>
+		<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+		<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
+		<textcolor>black</textcolor>
+		<font>font16</font>
+		<align>center</align>
+		<aligny>center</aligny>
+	</include>
 	<include name="16x9_xPos_Relocation">
 		<animation effect="slide" start="0,0" end="16x9Offset,0" time="0" condition="true">conditional</animation>
 	</include>
