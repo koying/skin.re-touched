@@ -130,7 +130,7 @@
 						<texture fallback="unknown-user.png">$INFO[Listitem.Icon]</texture>
 					</control>
 					<control type="label">
-						<posx>103</posx>
+						<posx>5</posx>
 						<posy>200</posy>
 						<width>197</width>
 						<height>25</height>
@@ -142,7 +142,7 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<posx>103</posx>
+						<posx>5</posx>
 						<posy>230</posy>
 						<width>197</width>
 						<height>20</height>
@@ -155,7 +155,7 @@
 						<visible>!IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
-						<posx>103</posx>
+						<posx>5</posx>
 						<posy>250</posy>
 						<width>197</width>
 						<height>20</height>
@@ -183,7 +183,7 @@
 						<texture fallback="unknown-user.png">$INFO[Listitem.Icon]</texture>
 					</control>
 					<control type="label">
-						<posx>103</posx>
+						<posx>5</posx>
 						<posy>200</posy>
 						<width>197</width>
 						<height>25</height>
@@ -195,7 +195,7 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<posx>103</posx>
+						<posx>5</posx>
 						<posy>230</posy>
 						<width>197</width>
 						<height>20</height>
@@ -208,7 +208,7 @@
 						<visible>!IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
-						<posx>103</posx>
+						<posx>5</posx>
 						<posy>250</posy>
 						<width>197</width>
 						<height>20</height>

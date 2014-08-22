@@ -41,7 +41,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>1510</posx>
+					<posx>1110</posx>
 					<posy>2</posy>
 					<width>400</width>
 					<height>30</height>
@@ -91,7 +91,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>1510</posx>
+					<posx>1110</posx>
 					<posy>2</posy>
 					<width>400</width>
 					<height>30</height>
@@ -155,7 +155,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>1480</posx>
+					<posx>1080</posx>
 					<posy>2</posy>
 					<width>400</width>
 					<height>30</height>
@@ -178,7 +178,7 @@
 					<visible>![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 				</control>
 				<control type="label">
-					<posx>1420</posx>
+					<posx>1020</posx>
 					<posy>2</posy>
 					<width>400</width>
 					<height>30</height>
@@ -254,7 +254,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>1480</posx>
+					<posx>1080</posx>
 					<posy>2</posy>
 					<width>400</width>
 					<height>30</height>
@@ -277,7 +277,7 @@
 					<visible>![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 				</control>
 				<control type="label">
-					<posx>1420</posx>
+					<posx>1020</posx>
 					<posy>2</posy>
 					<width>400</width>
 					<height>30</height>
@@ -357,7 +357,7 @@
 					<texture background="true">$INFO[Listitem.Icon]</texture>
 				</control>
 				<control type="label">
-					<posx>110</posx>
+					<posx>10</posx>
 					<posy>200</posy>
 					<width>200</width>
 					<height>25</height>
@@ -408,7 +408,7 @@
 					<texture background="true">$INFO[Listitem.Icon]</texture>
 				</control>
 				<control type="label">
-					<posx>110</posx>
+					<posx>10</posx>
 					<posy>200</posy>
 					<width>200</width>
 					<height>25</height>
@@ -693,7 +693,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>750</posx>
+					<posx>500</posx>
 					<posy>145</posy>
 					<width>500</width>
 					<height>20</height>
@@ -747,7 +747,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>750</posx>
+					<posx>500</posx>
 					<posy>145</posy>
 					<width>500</width>
 					<height>20</height>
