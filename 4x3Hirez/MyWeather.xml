@@ -360,7 +360,7 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<posx>100</posx>
+							<posx>0</posx>
 							<posy>70</posy>
 							<width>200</width>
 							<height>25</height>
@@ -374,7 +374,7 @@
 							<visible>!IsEmpty(ListItem.Property(HighTemp))</visible>
 						</control>
 						<control type="label">
-							<posx>210</posx>
+							<posx>110</posx>
 							<posy>70</posy>
 							<width>200</width>
 							<height>25</height>
@@ -430,7 +430,7 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<posx>100</posx>
+							<posx>0</posx>
 							<posy>70</posy>
 							<width>200</width>
 							<height>25</height>
@@ -444,7 +444,7 @@
 							<visible>!IsEmpty(ListItem.Property(HighTemp))</visible>
 						</control>
 						<control type="label">
-							<posx>210</posx>
+							<posx>110</posx>
 							<posy>70</posy>
 							<width>200</width>
 							<height>25</height>

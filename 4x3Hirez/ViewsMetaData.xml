@@ -61,7 +61,7 @@
 					<label>$INFO[ListItem.Genre]</label>
 				</control>
 				<control type="label">
-					<posx>990</posx>
+					<posx>590</posx>
 					<posy>7</posy>
 					<width>400</width>
 					<height>30</height>
@@ -163,7 +163,7 @@
 					<label>$INFO[ListItem.Genre]</label>
 				</control>
 				<control type="label">
-					<posx>990</posx>
+					<posx>590</posx>
 					<posy>7</posy>
 					<width>400</width>
 					<height>30</height>
@@ -266,7 +266,7 @@
 					<label>$INFO[ListItem.Premiered,$LOCALIZE[20416] : ]</label>
 				</control>
 				<control type="label">
-					<posx>990</posx>
+					<posx>590</posx>
 					<posy>7</posy>
 					<width>400</width>
 					<height>30</height>
@@ -369,7 +369,7 @@
 					<label>$INFO[ListItem.Premiered,$LOCALIZE[20416] : ]</label>
 				</control>
 				<control type="label">
-					<posx>990</posx>
+					<posx>590</posx>
 					<posy>7</posy>
 					<width>400</width>
 					<height>30</height>
@@ -476,7 +476,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>1080</posx>
+					<posx>800</posx>
 					<posy>15</posy>
 					<width>280</width>
 					<height>20</height>
@@ -540,7 +540,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>1080</posx>
+					<posx>800</posx>
 					<posy>15</posy>
 					<width>280</width>
 					<height>20</height>

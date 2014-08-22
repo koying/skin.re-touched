@@ -115,7 +115,7 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="30">
 					<control type="label">
-						<posx>200</posx>
+						<posx>40</posx>
 						<posy>0</posy>
 						<width>160</width>
 						<height>30</height>
@@ -141,7 +141,7 @@
 				</itemlayout>
 				<focusedlayout height="30">
 					<control type="label">
-						<posx>200</posx>
+						<posx>40</posx>
 						<posy>0</posy>
 						<width>160</width>
 						<height>30</height>
@@ -281,7 +281,7 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="30">
 					<control type="label">
-						<posx>200</posx>
+						<posx>40</posx>
 						<posy>0</posy>
 						<width>160</width>
 						<height>30</height>
@@ -307,7 +307,7 @@
 				</itemlayout>
 				<focusedlayout height="30">
 					<control type="label">
-						<posx>200</posx>
+						<posx>40</posx>
 						<posy>0</posy>
 						<width>160</width>
 						<height>30</height>
@@ -422,7 +422,7 @@
 					<label>([B]$INFO[ListItem.TrackNumber][/B]) - $INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>970</posx>
+					<posx>470</posx>
 					<posy>0</posy>
 					<width>500</width>
 					<height>60</height>
@@ -453,7 +453,7 @@
 					<label>([B]$INFO[ListItem.TrackNumber][/B]) - $INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>970</posx>
+					<posx>470</posx>
 					<posy>0</posy>
 					<width>500</width>
 					<height>60</height>
@@ -475,7 +475,7 @@
 					<bordersize>8</bordersize>
 				</control>
 				<control type="label">
-					<posx>125</posx>
+					<posx>10</posx>
 					<posy>230</posy>
 					<width>230</width>
 					<height>30</height>
@@ -497,7 +497,7 @@
 					<bordersize>8</bordersize>
 				</control>
 				<control type="label">
-					<posx>125</posx>
+					<posx>10</posx>
 					<posy>230</posy>
 					<width>230</width>
 					<height>30</height>
