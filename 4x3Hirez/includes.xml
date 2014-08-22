@@ -487,6 +487,7 @@
 				<bordertexture border="5">IconBack.png</bordertexture>
 				<bordersize>12</bordersize>
 				<texture>$INFO[ListItem.Icon]</texture>
+				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="label">
 				<posx>6</posx>
@@ -517,6 +518,7 @@
 				<bordertexture border="5">IconBack-focus.png</bordertexture>
 				<bordersize>12</bordersize>
 				<texture>$INFO[ListItem.Icon]</texture>
+				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="label">
 				<posx>6</posx>
@@ -781,6 +783,7 @@
 						<width>60</width>
 						<height>80</height>
 						<texture>$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -829,6 +832,7 @@
 						<width>60</width>
 						<height>80</height>
 						<texture>$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
 						<posx>0</posx>

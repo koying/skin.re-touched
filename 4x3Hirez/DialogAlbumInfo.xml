@@ -471,6 +471,7 @@
 					<width>230</width>
 					<height>230</height>
 					<texture>$INFO[ListItem.Icon]</texture>
+					<aspectratio>keep</aspectratio>
 					<bordertexture border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>
@@ -493,6 +494,7 @@
 					<width>230</width>
 					<height>230</height>
 					<texture>$INFO[ListItem.Icon]</texture>
+					<aspectratio>keep</aspectratio>
 					<bordertexture border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>

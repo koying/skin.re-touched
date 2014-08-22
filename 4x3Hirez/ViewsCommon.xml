@@ -27,6 +27,7 @@
 					<width>50</width>
 					<height>50</height>
 					<texture background="true">$VAR[PosterThumb]</texture>
+					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
 					<posx>75</posx>
@@ -77,6 +78,7 @@
 					<width>50</width>
 					<height>50</height>
 					<texture background="true">$VAR[PosterThumb]</texture>
+					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
 					<posx>75</posx>
@@ -141,6 +143,7 @@
 					<width>50</width>
 					<height>50</height>
 					<texture background="true">$VAR[PosterThumb]</texture>
+					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
 					<posx>75</posx>
@@ -241,6 +244,7 @@
 					<width>50</width>
 					<height>50</height>
 					<texture background="true">$VAR[PosterThumb]</texture>
+					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
 					<posx>75</posx>
@@ -356,6 +360,7 @@
 					<width>200</width>
 					<height>185</height>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
+					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
 					<posx>10</posx>
@@ -407,6 +412,7 @@
 					<width>200</width>
 					<height>185</height>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
+					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
 					<posx>10</posx>
@@ -458,6 +464,7 @@
 					<width>190</width>
 					<height>285</height>
 					<texture background="true">$VAR[PosterThumb]</texture>
+					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="textbox">
 					<posx>10</posx>
@@ -507,6 +514,7 @@
 					<width>190</width>
 					<height>285</height>
 					<texture background="true">$VAR[PosterThumb]</texture>
+					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="textbox">
 					<posx>10</posx>

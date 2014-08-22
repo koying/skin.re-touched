@@ -28,6 +28,7 @@
 					<width>150</width>
 					<height>220</height>
 					<texture background="true">$VAR[PosterThumb]</texture>
+					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -130,6 +131,7 @@
 					<width>150</width>
 					<height>220</height>
 					<texture background="true">$VAR[PosterThumb]</texture>
+					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="image">
 					<posx>0</posx>
