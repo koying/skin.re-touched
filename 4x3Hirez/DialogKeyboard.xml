@@ -73,8 +73,6 @@
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
 			</control>
 			<control type="group">
 				<posx>0</posx>

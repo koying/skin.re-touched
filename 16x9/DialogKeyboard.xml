@@ -73,8 +73,6 @@
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
 			</control>
 			<control type="group">
 				<posx>0</posx>
@@ -608,7 +606,7 @@
 						<posy>0</posy>
 						<width>193</width>
 						<height>80</height>
-						<visible>IsEmpty(Control.GetLabel(169)</visible>
+						<visible>IsEmpty(Control.GetLabel(169))</visible>
 						<control type="button" id="306">
 							<description>next button</description>
 							<posx>0</posx>
@@ -639,7 +637,7 @@
 						<posy>0</posy>
 						<width>100</width>
 						<height>80</height>
-						<visible>!IsEmpty(Control.GetLabel(169)</visible>
+						<visible>!IsEmpty(Control.GetLabel(169))</visible>
 						<control type="button" id="305">
 							<description>previous button</description>
 							<posx>0</posx>
@@ -670,7 +668,7 @@
 						<posy>0</posy>
 						<width>100</width>
 						<height>80</height>
-						<visible>!IsEmpty(Control.GetLabel(169)</visible>
+						<visible>!IsEmpty(Control.GetLabel(169))</visible>
 						<control type="button" id="306">
 							<description>next button</description>
 							<posx>0</posx>

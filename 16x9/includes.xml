@@ -66,7 +66,7 @@
 					<label>-</label>
 					<texturenofocus>OSDPrevTrackNF.png</texturenofocus>
 					<texturefocus>OSDPrevTrackFO.png</texturefocus>
-					<onclick>XBMC.PlayerControl(Previous)</onclick>
+					<onclick>PlayerControl(Previous)</onclick>
 				</control>
 				<control type="togglebutton">
 					<description>Play Button</description>
@@ -80,7 +80,7 @@
 					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
 					<alttexturefocus>OSDPauseFO.png</alttexturefocus>
 					<alttexturenofocus>OSDPauseNF.png</alttexturenofocus>
-					<onclick>XBMC.PlayerControl(Play)</onclick>
+					<onclick>PlayerControl(Play)</onclick>
 				</control>
 				<control type="button">
 					<description>Next Button</description>
@@ -91,7 +91,7 @@
 					<label>-</label>
 					<texturenofocus>OSDNextTrackNF.png</texturenofocus>
 					<texturefocus>OSDNextTrackFO.png</texturefocus>
-					<onclick>XBMC.PlayerControl(Next)</onclick>
+					<onclick>PlayerControl(Next)</onclick>
 				</control>
 				<control type="progress">
 					<description>Progressbar</description>
@@ -134,7 +134,7 @@
 			<texture>black.png</texture>
 		</control>
 		<control type="label">
-			<description>XBMC label</description>
+			<description>Kodi label</description>
 			<posx>5</posx>
 			<posy>0</posy>
 			<width>200</width>
@@ -143,7 +143,7 @@
 			<aligny>center</aligny>
 			<font>font10_title</font>
 			<textcolor>white</textcolor>
-			<label>XBMC</label>
+			<label>Kodi</label>
 		</control>
 		<control type="label">
 			<description>time label</description>

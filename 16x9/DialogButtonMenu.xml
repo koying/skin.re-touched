@@ -108,7 +108,7 @@
 					<usealttexture>!System.IsMaster</usealttexture>
 					<alttexturefocus>ButtonMenuNoMasterFO.png</alttexturefocus>
 					<alttexturenofocus>ButtonMenuNoMasterNF.png</alttexturenofocus>
-					<onclick>xbmc.mastermode</onclick>
+					<onclick>mastermode</onclick>
 					<pulseonselect>no</pulseonselect>
 					<font>-</font>
 					<visible>System.HasLocks</visible>
@@ -128,12 +128,12 @@
 					<visible>System.Loggedon</visible>
 				</control>
 				<control type="button" id="11">
-					<description>Exit xbmc</description>
+					<description>Exit</description>
 					<width>90</width>
 					<height>90</height>
 					<texturefocus>ButtonMenuExitFO.png</texturefocus>
 					<texturenofocus>ButtonMenuExitNF.png</texturenofocus>
-					<onclick>XBMC.Quit()</onclick>
+					<onclick>Quit</onclick>
 					<pulseonselect>no</pulseonselect>
 					<font>-</font>
 					<label>$LOCALIZE[13012]</label>
@@ -149,7 +149,7 @@
 						<height>90</height>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<onclick>XBMC.CancelAlarm(shutdowntimer)</onclick>
+						<onclick>CancelAlarm(shutdowntimer)</onclick>
 						<pulseonselect>no</pulseonselect>
 						<font>-</font>
 						<label>20151</label>
@@ -167,7 +167,7 @@
 						<height>90</height>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Powerdown())</onclick>
+						<onclick>AlarmClock(shutdowntimer,Powerdown)</onclick>
 						<pulseonselect>no</pulseonselect>
 						<font>-</font>
 						<label>20150</label>
@@ -184,7 +184,7 @@
 						<height>90</height>
 						<texturefocus>-</texturefocus>
 						<texturenofocus>ButtonMenuShutdownNF.png</texturenofocus>
-						<onclick>XBMC.Powerdown()</onclick>
+						<onclick>Powerdown</onclick>
 						<pulseonselect>no</pulseonselect>
 						<font>-</font>
 						<label>13016</label>
@@ -204,12 +204,12 @@
 					</control>
 				</control>
 				<control type="button" id="12">
-					<description>Suspend xbmc</description>
+					<description>Suspend</description>
 					<width>90</width>
 					<height>90</height>
 					<texturefocus>ButtonMenuSleepFO.png</texturefocus>
 					<texturenofocus>ButtonMenuSleepNF.png</texturenofocus>
-					<onclick>XBMC.Suspend()</onclick>
+					<onclick>Suspend</onclick>
 					<pulseonselect>no</pulseonselect>
 					<font>-</font>
 					<label>$LOCALIZE[13011]</label>
@@ -220,7 +220,7 @@
 					<height>90</height>
 					<texturefocus>ButtonMenuRestartFO.png</texturefocus>
 					<texturenofocus>ButtonMenuRestartNF.png</texturenofocus>
-					<onclick>XBMC.Reset()</onclick>
+					<onclick>Reset</onclick>
 					<pulseonselect>no</pulseonselect>
 					<font>-</font>
 					<label>13013</label>
