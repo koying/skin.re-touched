@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.re-touched"
-  version="2.2.0"
+  version="3.0.0"
   name="re-Touched"
   provider-name="Jezz_X">
   <requires>
-    <import addon="xbmc.gui" version="5.0.0"/>
+    <import addon="xbmc.gui" version="5.3.0"/>
   </requires>
   <extension
     point="xbmc.gui.skin"
