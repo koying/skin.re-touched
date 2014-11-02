@@ -72,16 +72,15 @@
 				</control>
 				<control type="group">
 					<posx>220</posx>
-					<posy>140</posy>
+					<posy>135</posy>
 					<width>600</width>
-					<height>45</height>
+					<height>48</height>
 					<control type="image">
 						<description>Audio Codec Image</description>
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>100</width>
-						<height>45</height>
-						<aspectratio align="left">keep</aspectratio>
+						<height>48</height>
 						<texture>$INFO[MusicPlayer.Codec,flagging/audio/,.png]</texture>
 					</control>
 					<control type="group">
@@ -89,24 +88,22 @@
 						<posx>105</posx>
 						<posy>0</posy>
 						<width>160</width>
-						<height>45</height>
+						<height>48</height>
 						<control type="image">
 							<description>rating back</description>
 							<posx>0</posx>
 							<posy>0</posy>
-							<width>160</width>
-							<height>45</height>
-							<aspectratio align="left">stretch</aspectratio>
+							<width>145</width>
+							<height>48</height>
 							<texture border="5">flagging/blank.png</texture>
 						</control>
 						<control type="image">
 							<description>Rating</description>
 							<posx>10</posx>
-							<posy>0</posy>
-							<width>140</width>
-							<height>45</height>
-							<aspectratio align="center">keep</aspectratio>
-							<texture fallback="LeftRating/rating0.png">$INFO[Player.StarRating,light/left_rating/]</texture>
+							<posy>8</posy>
+							<width>125</width>
+							<height>32</height>
+							<texture fallback="light/left_rating/rating0.png">$INFO[Player.StarRating,light/left_rating/]</texture>
 						</control>
 					</control>
 				</control>
@@ -214,43 +211,39 @@
 					</control>
 					<control type="group">
 						<posx>290</posx>
-						<posy>140</posy>
+						<posy>135</posy>
 						<width>600</width>
-						<height>45</height>
+						<height>48</height>
 						<control type="image">
 							<description>Video Codec Image</description>
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>100</width>
-							<height>45</height>
-							<aspectratio align="left">keep</aspectratio>
+							<height>48</height>
 							<texture>$INFO[VideoPlayer.VideoCodec,flagging/video/,.png]</texture>
 						</control>
 						<control type="image">
 							<description>Resolution Image</description>
-							<posx>100</posx>
+							<posx>105</posx>
 							<posy>0</posy>
-							<width>75</width>
-							<height>45</height>
-							<aspectratio align="left">keep</aspectratio>
+							<width>64</width>
+							<height>48</height>
 							<texture>$INFO[VideoPlayer.VideoResolution,flagging/video/,.png]</texture>
 						</control>
 						<control type="image">
 							<description>Audio Codec Image</description>
-							<posx>175</posx>
+							<posx>174</posx>
 							<posy>0</posy>
 							<width>100</width>
-							<height>45</height>
-							<aspectratio align="left">keep</aspectratio>
+							<height>48</height>
 							<texture>$INFO[VideoPlayer.AudioCodec,flagging/audio/,.png]</texture>
 						</control>
 						<control type="image">
 							<description>Audio Codec Image</description>
-							<posx>275</posx>
+							<posx>279</posx>
 							<posy>0</posy>
-							<width>75</width>
-							<height>45</height>
-							<aspectratio align="left">keep</aspectratio>
+							<width>64</width>
+							<height>48</height>
 							<texture>$INFO[VideoPlayer.AudioChannels,flagging/audio/,.png]</texture>
 						</control>
 					</control>
@@ -304,43 +297,39 @@
 					</control>
 					<control type="group">
 						<posx>190</posx>
-						<posy>140</posy>
+						<posy>135</posy>
 						<width>600</width>
-						<height>45</height>
+						<height>48</height>
 						<control type="image">
 							<description>Video Codec Image</description>
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>100</width>
-							<height>45</height>
-							<aspectratio align="left">keep</aspectratio>
+							<height>48</height>
 							<texture>$INFO[VideoPlayer.VideoCodec,flagging/video/,.png]</texture>
 						</control>
 						<control type="image">
 							<description>Resolution Image</description>
-							<posx>100</posx>
+							<posx>105</posx>
 							<posy>0</posy>
-							<width>75</width>
-							<height>45</height>
-							<aspectratio align="left">keep</aspectratio>
+							<width>64</width>
+							<height>48</height>
 							<texture>$INFO[VideoPlayer.VideoResolution,flagging/video/,.png]</texture>
 						</control>
 						<control type="image">
 							<description>Audio Codec Image</description>
-							<posx>175</posx>
+							<posx>174</posx>
 							<posy>0</posy>
 							<width>100</width>
-							<height>45</height>
-							<aspectratio align="left">keep</aspectratio>
+							<height>48</height>
 							<texture>$INFO[VideoPlayer.AudioCodec,flagging/audio/,.png]</texture>
 						</control>
 						<control type="image">
 							<description>Audio Codec Image</description>
-							<posx>275</posx>
+							<posx>279</posx>
 							<posy>0</posy>
-							<width>75</width>
-							<height>45</height>
-							<aspectratio align="left">keep</aspectratio>
+							<width>64</width>
+							<height>48</height>
 							<texture>$INFO[VideoPlayer.AudioChannels,flagging/audio/,.png]</texture>
 						</control>
 					</control>
@@ -394,43 +383,39 @@
 					</control>
 					<control type="group">
 						<posx>290</posx>
-						<posy>140</posy>
+						<posy>135</posy>
 						<width>600</width>
-						<height>45</height>
+						<height>48</height>
 						<control type="image">
 							<description>Video Codec Image</description>
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>100</width>
-							<height>45</height>
-							<aspectratio align="left">keep</aspectratio>
+							<height>48</height>
 							<texture>$INFO[VideoPlayer.VideoCodec,flagging/video/,.png]</texture>
 						</control>
 						<control type="image">
 							<description>Resolution Image</description>
-							<posx>100</posx>
+							<posx>105</posx>
 							<posy>0</posy>
-							<width>75</width>
-							<height>45</height>
-							<aspectratio align="left">keep</aspectratio>
+							<width>64</width>
+							<height>48</height>
 							<texture>$INFO[VideoPlayer.VideoResolution,flagging/video/,.png]</texture>
 						</control>
 						<control type="image">
 							<description>Audio Codec Image</description>
-							<posx>175</posx>
+							<posx>174</posx>
 							<posy>0</posy>
 							<width>100</width>
-							<height>45</height>
-							<aspectratio align="left">keep</aspectratio>
+							<height>48</height>
 							<texture>$INFO[VideoPlayer.AudioCodec,flagging/audio/,.png]</texture>
 						</control>
 						<control type="image">
 							<description>Audio Codec Image</description>
-							<posx>275</posx>
+							<posx>279</posx>
 							<posy>0</posy>
-							<width>75</width>
-							<height>45</height>
-							<aspectratio align="left">keep</aspectratio>
+							<width>64</width>
+							<height>48</height>
 							<texture>$INFO[VideoPlayer.AudioChannels,flagging/audio/,.png]</texture>
 						</control>
 					</control>
