@@ -60,11 +60,10 @@
 		<include>CommonBackgroundOverlay</include>
 		<control type="image">
 			<description>Kodi Logo</description>
-			<posx>20</posx>
-			<posy>36</posy>
-			<width>360</width>
-			<height>48</height>
-			<aspectratio align="left">keep</aspectratio>
+			<posx>22</posx>
+			<posy>22</posy>
+			<width>150</width>
+			<height>75</height>
 			<texture>kodi-logo.png</texture>
 			<visible>!Player.HasMedia</visible>
 			<include>VisibleFadeEffect</include>
