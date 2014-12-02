@@ -578,64 +578,64 @@
 	</include>
 	<include name="CommonNowPlaying">
 		<control type="group">
-			<posx>110</posx>
-			<posy>25</posy>
+			<posx>35</posx>
+			<posy>20</posy>
 			<visible>Player.HasMedia + !Window.IsVisible(PlayerControls)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="button">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>270</width>
-				<height>67</height>
+				<width>370</width>
+				<height>77</height>
 				<texturefocus border="8">IconBack.png</texturefocus>
 				<texturenofocus border="8">IconBack.png</texturenofocus>
 				<onclick>ActivateWindow(PlayerControls)</onclick>
 			</control>
 			<control type="fadelabel">
 				<posx>10</posx>
-				<posy>5</posy>
-				<width>250</width>
+				<posy>10</posy>
+				<width>350</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
 				<label>$LOCALIZE[31040]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font10_title</font>
+				<font>font12_title</font>
 				<textcolor>black</textcolor>
 				<visible>!Player.Paused</visible>
 			</control>
 			<control type="fadelabel">
 				<posx>10</posx>
-				<posy>5</posy>
-				<width>250</width>
+				<posy>10</posy>
+				<width>350</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
 				<label>$LOCALIZE[31043]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font10_title</font>
+				<font>font12_title</font>
 				<textcolor>black</textcolor>
 				<visible>Player.Paused</visible>
 			</control>
 			<control type="fadelabel">
 				<posx>10</posx>
-				<posy>24</posy>
-				<width>250</width>
+				<posy>30</posy>
+				<width>350</width>
 				<height>20</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
 				<label>[B]$INFO[MusicPlayer.Title]$INFO[VideoPlayer.Title][/B]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font12</font>
+				<font>font13</font>
 				<textcolor>black</textcolor>
 			</control>
 			<control type="fadelabel">
 				<posx>10</posx>
-				<posy>45</posy>
-				<width>250</width>
+				<posy>55</posy>
+				<width>350</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
@@ -643,49 +643,49 @@
 				<label>[B]$INFO[MusicPlayer.Album][/B]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font10</font>
+				<font>font13</font>
 				<textcolor>black</textcolor>
 				<visible>Player.HasAudio</visible>
 			</control>
 			<control type="fadelabel">
 				<posx>10</posx>
-				<posy>45</posy>
-				<width>250</width>
+				<posy>55</posy>
+				<width>350</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
 				<label>[B]$INFO[VideoPlayer.Studio][/B]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font10</font>
+				<font>font13</font>
 				<textcolor>black</textcolor>
 				<visible>Player.HasVideo + VideoPlayer.Content(Movies)</visible>
 			</control>
 			<control type="fadelabel">
 				<posx>10</posx>
-				<posy>45</posy>
-				<width>250</width>
+				<posy>55</posy>
+				<width>350</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
 				<label>[B]$INFO[VideoPlayer.TVShowTitle][/B]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font10</font>
+				<font>font13</font>
 				<textcolor>black</textcolor>
 				<visible>Player.HasVideo + VideoPlayer.Content(Episodes)</visible>
 			</control>
 			<control type="fadelabel">
 				<posx>10</posx>
-				<posy>45</posy>
-				<width>250</width>
+				<posy>55</posy>
+				<width>350</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
 				<label>[B]$INFO[VideoPlayer.Artist][/B]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font10</font>
+				<font>font13</font>
 				<textcolor>black</textcolor>
 				<visible>Player.HasVideo + VideoPlayer.Content(MusicVideos)</visible>
 			</control>
