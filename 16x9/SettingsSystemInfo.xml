@@ -317,7 +317,7 @@
 					<description>Kodi Build Version</description>
 					<posx>1130</posx>
 					<posy>0</posy>
-					<width>730</width>
+					<width>1130</width>
 					<label>144</label>
 					<align>right</align>
 					<textcolor>white</textcolor>
