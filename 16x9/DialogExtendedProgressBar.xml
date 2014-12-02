@@ -4,46 +4,46 @@
 	<include>dialogeffect</include>
 	<controls>
 		<control type="group">
-			<posx>545r</posx>
-			<posy>25</posy>
+			<posx>645r</posx>
+			<posy>20</posy>
 			<visible>!Window.IsVisible(FullscreenVideo) + !Window.IsVisible(Visualisation)</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>350</width>
-				<height>67</height>
+				<width>550</width>
+				<height>77</height>
 				<texture border="8">IconBack.png</texture>
 			</control>
 			<control type="fadelabel" id="30">
 				<posx>10</posx>
-				<posy>5</posy>
-				<width>330</width>
+				<posy>10</posy>
+				<width>530</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font10_title</font>
+				<font>font12_title</font>
 				<textcolor>black</textcolor>
 			</control>
 			<control type="fadelabel" id="31">
 				<posx>10</posx>
-				<posy>24</posy>
-				<width>330</width>
+				<posy>35</posy>
+				<width>530</width>
 				<height>20</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font12</font>
+				<font>font13</font>
 				<textcolor>black</textcolor>
 				<haspath>true</haspath>
 			</control>
 			<control type="progress" id="32">
 				<description>progress control</description>
 				<posx>5</posx>
-				<posy>47</posy>
-				<width>340</width>
+				<posy>57</posy>
+				<width>540</width>
 				<height>15</height>
 			</control>
 		</control>
