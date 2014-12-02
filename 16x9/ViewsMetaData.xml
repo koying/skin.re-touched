@@ -499,11 +499,11 @@
 					<label>$INFO[ListItem.Plot]</label>
 				</control>
 				<control type="image">
-					<posx>5</posx>
-					<posy>2</posy>
+					<posx>10</posx>
+					<posy>15</posy>
 					<width>30</width>
 					<height>30</height>
-					<texture>$INFO[ListItem.Overlay,light/]</texture>
+					<texture>$INFO[ListItem.Overlay]</texture>
 					<visible>!ListItem.IsResumable</visible>
 				</control>
 			</itemlayout>
@@ -563,11 +563,11 @@
 					<label>$INFO[ListItem.Plot]</label>
 				</control>
 				<control type="image">
-					<posx>5</posx>
-					<posy>2</posy>
+					<posx>10</posx>
+					<posy>15</posy>
 					<width>30</width>
 					<height>30</height>
-					<texture>$INFO[ListItem.Overlay,dark/]</texture>
+					<texture>$INFO[ListItem.Overlay]</texture>
 					<visible>!ListItem.IsResumable</visible>
 				</control>
 			</focusedlayout>

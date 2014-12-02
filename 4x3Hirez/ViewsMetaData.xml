@@ -500,9 +500,9 @@
 				</control>
 				<control type="image">
 					<posx>5</posx>
-					<posy>2</posy>
-					<width>20</width>
-					<height>20</height>
+					<posy>8</posy>
+					<width>30</width>
+					<height>30</height>
 					<texture>$INFO[ListItem.Overlay,light/]</texture>
 					<visible>!ListItem.IsResumable</visible>
 				</control>
@@ -564,9 +564,9 @@
 				</control>
 				<control type="image">
 					<posx>5</posx>
-					<posy>2</posy>
-					<width>20</width>
-					<height>20</height>
+					<posy>8</posy>
+					<width>30</width>
+					<height>30</height>
 					<texture>$INFO[ListItem.Overlay,dark/]</texture>
 					<visible>!ListItem.IsResumable</visible>
 				</control>
