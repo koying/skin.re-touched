@@ -66,12 +66,12 @@
 
 		<control type="group">
 			<include>Window_OpenClose_Animation_Zoom</include>
-			<posx>480</posx>
-			<posy>760</posy>
+			<posx>350</posx>
+			<posy>730</posy>
 			<control type="image">
-				<posx>0</posx>
+				<posx>-20</posx>
 				<posy>0</posy>
-				<width>620</width>
+				<width>920</width>
 				<height>140</height>
 				<texture border="5">SubBack.png</texture>
 				<bordertexture border="30">ShadowBorder.png</bordertexture>
@@ -79,18 +79,18 @@
 			</control>
 			<control type="textbox" id="6">
 				<description>Settings Description</description>
-				<posx>40</posx>
+				<posx>20</posx>
 				<posy>25</posy>
-				<width>540</width>
+				<width>880</width>
 				<height>80</height>
-				<font>font12</font>
+				<font>font13</font>
 				<textcolor>grey2</textcolor>
 				<align>left</align>
 			</control>
 			<control type="image">
-				<posx>20</posx>
+				<posx>0</posx>
 				<posy>20</posy>
-				<width>200</width>
+				<width>400</width>
 				<height>100</height>
 				<texture>GlassOverlay.png</texture>
 				<colordiffuse>55FFFFFF</colordiffuse>
