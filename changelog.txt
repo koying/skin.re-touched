@@ -1,2 +1,5 @@
+v3.0.1
+- Update language files
+
 v3.0.0
 - Initial release for Kodi Helix
