@@ -68,7 +68,7 @@
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<include>16x9_xPos_Relocation</include>
 			<posx>330</posx>
-			<posy>760</posy>
+			<posy>735</posy>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
