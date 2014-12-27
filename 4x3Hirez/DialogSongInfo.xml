@@ -93,7 +93,7 @@
 					<description>Album Title</description>
 					<posx>150</posx>
 					<posy>30</posy>
-					<width>130</width>
+					<width>150</width>
 					<height>25</height>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -117,7 +117,7 @@
 					<description>Genre Title</description>
 					<posx>150</posx>
 					<posy>60</posy>
-					<width>130</width>
+					<width>150</width>
 					<height>25</height>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -141,7 +141,7 @@
 					<description>Year Title</description>
 					<posx>150</posx>
 					<posy>90</posy>
-					<width>130</width>
+					<width>150</width>
 					<height>25</height>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -165,7 +165,7 @@
 					<description>Track Number Title</description>
 					<posx>150</posx>
 					<posy>120</posy>
-					<width>130</width>
+					<width>150</width>
 					<height>25</height>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -189,7 +189,7 @@
 					<description>Rating Title</description>
 					<posx>150</posx>
 					<posy>150</posy>
-					<width>130</width>
+					<width>150</width>
 					<height>25</height>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -242,7 +242,7 @@
 					<description>Comment Title</description>
 					<posx>150</posx>
 					<posy>200</posy>
-					<width>130</width>
+					<width>150</width>
 					<height>25</height>
 					<align>right</align>
 					<aligny>center</aligny>

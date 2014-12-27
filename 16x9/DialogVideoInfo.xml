@@ -121,9 +121,9 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="30">
 					<control type="label">
-						<posx>40</posx>
+						<posx>0</posx>
 						<posy>0</posy>
-						<width>160</width>
+						<width>200</width>
 						<height>30</height>
 						<font>font13_title</font>
 						<align>right</align>
@@ -147,9 +147,9 @@
 				</itemlayout>
 				<focusedlayout height="30">
 					<control type="label">
-						<posx>40</posx>
+						<posx>0</posx>
 						<posy>0</posy>
-						<width>160</width>
+						<width>200</width>
 						<height>30</height>
 						<font>font13_title</font>
 						<align>right</align>
@@ -305,9 +305,9 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="30">
 					<control type="label">
-						<posx>40</posx>
+						<posx>0</posx>
 						<posy>0</posy>
-						<width>160</width>
+						<width>200</width>
 						<height>30</height>
 						<font>font13_title</font>
 						<align>right</align>
@@ -331,9 +331,9 @@
 				</itemlayout>
 				<focusedlayout height="30">
 					<control type="label">
-						<posx>40</posx>
+						<posx>0</posx>
 						<posy>0</posy>
-						<width>160</width>
+						<width>200</width>
 						<height>30</height>
 						<font>font13_title</font>
 						<align>right</align>
@@ -470,9 +470,9 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="30">
 					<control type="label">
-						<posx>40</posx>
+						<posx>0</posx>
 						<posy>0</posy>
-						<width>160</width>
+						<width>200</width>
 						<height>30</height>
 						<font>font13_title</font>
 						<align>right</align>
@@ -496,9 +496,9 @@
 				</itemlayout>
 				<focusedlayout height="30">
 					<control type="label">
-						<posx>40</posx>
+						<posx>0</posx>
 						<posy>0</posy>
-						<width>160</width>
+						<width>200</width>
 						<height>30</height>
 						<font>font13_title</font>
 						<align>right</align>
@@ -665,9 +665,9 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="30">
 					<control type="label">
-						<posx>40</posx>
+						<posx>0</posx>
 						<posy>0</posy>
-						<width>160</width>
+						<width>200</width>
 						<height>30</height>
 						<font>font13_title</font>
 						<align>right</align>
@@ -691,9 +691,9 @@
 				</itemlayout>
 				<focusedlayout height="30">
 					<control type="label">
-						<posx>40</posx>
+						<posx>0</posx>
 						<posy>0</posy>
-						<width>160</width>
+						<width>200</width>
 						<height>30</height>
 						<font>font13_title</font>
 						<align>right</align>
