@@ -709,25 +709,25 @@
 	</include>
 	<include name="MediaBladeLeft">
 		<control type="group">
-			<animation effect="slide" start="0,0" end="-400,0" time="400" tween="quadratic" easing="out" condition="Window.Next(Settings) | Window.Next(Weather)">WindowClose</animation>
-			<animation effect="slide" end="0,0" start="-400,0" time="400" tween="quadratic" easing="out" condition="Window.Previous(Settings) | Window.Next(Weather)">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="-295,0" time="400" tween="quadratic" easing="out" condition="Window.IsVisible(Home) + ![Window.Next(Settings) | Window.Next(Weather)]">WindowClose</animation>
-			<animation effect="slide" end="0,0" start="-295,0" time="400" tween="quadratic" easing="out" condition="Window.IsVisible(Home) + ![Window.Previous(Settings) | Window.Next(Weather)]">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="295,0" time="400" tween="quadratic" easing="out" condition="Window.IsActive(Home)">Conditional</animation>
-			<posx>-295</posx>
+			<animation effect="slide" start="0,0" end="-430,0" time="400" tween="quadratic" easing="out" condition="Window.Next(Settings) | Window.Next(Weather)">WindowClose</animation>
+			<animation effect="slide" end="0,0" start="-430,0" time="400" tween="quadratic" easing="out" condition="Window.Previous(Settings) | Window.Next(Weather)">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="-325,0" time="400" tween="quadratic" easing="out" condition="Window.IsVisible(Home) + ![Window.Next(Settings) | Window.Next(Weather)]">WindowClose</animation>
+			<animation effect="slide" end="0,0" start="-325,0" time="400" tween="quadratic" easing="out" condition="Window.IsVisible(Home) + ![Window.Previous(Settings) | Window.Next(Weather)]">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="325,0" time="400" tween="quadratic" easing="out" condition="Window.IsActive(Home)">Conditional</animation>
+			<posx>-325</posx>
 			<posy>20</posy>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>400</width>
+				<width>430</width>
 				<height>940</height>
 				<texture border="0,0,18,0">HomeBlade.png</texture>
 			</control>
 			<control type="list" id="9000">
 				<posx>0</posx>
-				<posy>170</posy>
-				<width>380</width>
-				<height>601</height>
+				<posy>150</posy>
+				<width>410</width>
+				<height>661</height>
 				<onleft>9000</onleft>
 				<onright>1000</onright>
 				<onup>10</onup>
@@ -735,48 +735,48 @@
 				<pagecontrol>-</pagecontrol>
 				<scrolltime>300</scrolltime>
 				<orientation>vertical</orientation>
-				<itemlayout height="100" width="380">
+				<itemlayout height="110" width="410">
 					<control type="image">
 						<posx>0</posx>
 						<posy>-1</posy>
-						<width>280</width>
+						<width>310</width>
 						<height>2</height>
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="image">
 						<posx>0</posx>
-						<posy>99</posy>
-						<width>280</width>
+						<posy>109</posy>
+						<width>310</width>
 						<height>2</height>
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="image">
-						<posx>300</posx>
+						<posx>330</posx>
 						<posy>-1</posy>
 						<width>80</width>
 						<height>2</height>
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="image">
-						<posx>300</posx>
-						<posy>99</posy>
+						<posx>330</posx>
+						<posy>109</posy>
 						<width>80</width>
 						<height>2</height>
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="image">
-						<posx>310</posx>
+						<posx>340</posx>
 						<posy>10</posy>
 						<width>60</width>
-						<height>80</height>
+						<height>90</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>280</width>
-						<height>100</height>
+						<width>310</width>
+						<height>110</height>
 						<font>font30_title</font>
 						<textcolor>white</textcolor>
 						<align>right</align>
@@ -784,48 +784,48 @@
 						<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="100" width="380">
+				<focusedlayout height="110" width="410">
 					<control type="image">
 						<posx>0</posx>
 						<posy>-1</posy>
-						<width>280</width>
+						<width>310</width>
 						<height>2</height>
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="image">
 						<posx>0</posx>
-						<posy>99</posy>
-						<width>280</width>
+						<posy>109</posy>
+						<width>310</width>
 						<height>2</height>
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="image">
-						<posx>300</posx>
+						<posx>330</posx>
 						<posy>-1</posy>
 						<width>80</width>
 						<height>2</height>
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="image">
-						<posx>300</posx>
-						<posy>99</posy>
+						<posx>330</posx>
+						<posy>109</posy>
 						<width>80</width>
 						<height>2</height>
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="image">
-						<posx>310</posx>
+						<posx>340</posx>
 						<posy>10</posy>
 						<width>60</width>
-						<height>80</height>
+						<height>90</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>280</width>
-						<height>100</height>
+						<width>310</width>
+						<height>110</height>
 						<font>font30_title</font>
 						<textcolor>white</textcolor>
 						<align>right</align>
