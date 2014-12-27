@@ -177,6 +177,7 @@
 			<label>$LOCALIZE[31017]</label>
 			<visible>Window.IsVisible(MuteBug)</visible>
 			<include>VisibleFadeEffect</include>
+			<include>16x9_xPos_Relocation</include>
 		</control>
 		<control type="group">
 			<posx>35r</posx>
