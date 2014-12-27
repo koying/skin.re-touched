@@ -45,7 +45,7 @@
 				<posx>0</posx>
 				<posy>-40</posy>
 				<width>1201</width>
-				<height>50</height>
+				<height>510</height>
 				<aspectratio>stretch</aspectratio>
 				<texture border="5">DialogHeader.png</texture>
 			</control>
