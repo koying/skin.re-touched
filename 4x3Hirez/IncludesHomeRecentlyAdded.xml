@@ -438,7 +438,7 @@
 							<texture background="true">$INFO[Listitem.Icon]</texture>
 						</control>
 						<control type="label">
-							<posx>10</posx>
+							<posx>15</posx>
 							<posy>185</posy>
 							<width>190</width>
 							<height>25</height>
@@ -473,7 +473,7 @@
 							<texture background="true">$INFO[Listitem.Icon]</texture>
 						</control>
 						<control type="label">
-							<posx>10</posx>
+							<posx>15</posx>
 							<posy>185</posy>
 							<width>190</width>
 							<height>25</height>
@@ -612,7 +612,7 @@
 							<texture background="true">$INFO[Listitem.Icon]</texture>
 						</control>
 						<control type="label">
-							<posx>10</posx>
+							<posx>15</posx>
 							<posy>185</posy>
 							<width>190</width>
 							<height>25</height>
@@ -647,7 +647,7 @@
 							<texture background="true">$INFO[Listitem.Icon]</texture>
 						</control>
 						<control type="label">
-							<posx>10</posx>
+							<posx>15</posx>
 							<posy>185</posy>
 							<width>190</width>
 							<height>25</height>

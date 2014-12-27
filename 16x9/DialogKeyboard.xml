@@ -30,7 +30,7 @@
 			<animation effect="slide" start="0,500" end="0,0" time="400" easing="out" tween="quadratic" >WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="0,500" time="400" easing="in" tween="quadratic" >WindowClose</animation>
 			<animation effect="slide" start="0,0" end="0,500" time="400" easing="in" tween="quadratic" condition="Window.IsVisible(numericinput)">Conditional</animation>
-			<posx>15</posx>
+			<posx>40</posx>
 			<posy>500r</posy>
 			<control type="button">
 				<posx>0</posx>
@@ -48,7 +48,7 @@
 				<height>60</height>
 				<aspectratio>stretch</aspectratio>
 				<texture border="20">KeyboardEditArea.png</texture>
-			</control>	
+			</control>
 			<control type="edit" id="312">
 				<description>Edit Text</description>
 				<posx>0</posx>
@@ -76,7 +76,7 @@
 			<control type="group">
 				<posx>0</posx>
 				<posy>70</posy>
-<!-- First Row -->
+				<!-- First Row -->
 
 				<control type="grouplist">
 					<orientation>horizontal</orientation>
@@ -177,7 +177,7 @@
 						<altlabel>[COLOR=blue]@#$%[/COLOR]</altlabel>
 					</control>
 				</control>
-<!-- Second Row -->
+				<!-- Second Row -->
 				<control type="grouplist">
 					<posy>80</posy>
 					<orientation>horizontal</orientation>
@@ -297,7 +297,7 @@
 						</control>
 					</control>
 				</control>
-<!-- Third Row -->
+				<!-- Third Row -->
 				<control type="grouplist">
 					<posy>160</posy>
 					<orientation>horizontal</orientation>
@@ -454,7 +454,7 @@
 						</control>
 					</control>
 				</control>
-<!-- Forth Row -->
+				<!-- Forth Row -->
 				<control type="grouplist">
 					<posy>240</posy>
 					<orientation>horizontal</orientation>
@@ -559,15 +559,6 @@
 						<onup>151</onup>
 						<ondown>306</ondown>
 						<include>KeyboardButton</include>
-					</control>
-					<control type="button" id="600">
-						<description>filler key button</description>
-						<onup>151</onup>
-						<ondown>306</ondown>
-						<texturenofocus border="5">KeyboardKeyDark.png</texturenofocus>
-						<include>KeyboardButton</include>
-						<enable>no</enable>
-						<visible>IsEmpty(Control.GetLabel(166))</visible>
 					</control>
 					<control type="group">
 						<posx>0</posx>
@@ -694,7 +685,7 @@
 						</control>
 					</control>
 				</control>
-<!-- Fifth Row -->
+				<!-- Fifth Row -->
 				<control type="grouplist">
 					<posy>320</posy>
 					<orientation>horizontal</orientation>

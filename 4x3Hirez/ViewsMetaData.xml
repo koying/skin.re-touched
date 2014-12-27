@@ -243,6 +243,16 @@
 					<height>170</height>
 					<texture>GlassOverlay.png</texture>
 				</control>
+				<control type="textbox">
+					<posx>250</posx>
+					<posy>70</posy>
+					<width>830</width>
+					<height>83</height>
+					<font>font12</font>
+					<align>justify</align>
+					<textcolor>grey2</textcolor>
+					<label>$INFO[ListItem.Plot]</label>
+				</control>
 				<control type="label">
 					<posx>250</posx>
 					<posy>15</posy>
@@ -312,16 +322,6 @@
 					<texture>$INFO[ListItem.Overlay,light/]</texture>
 					<visible>!ListItem.IsResumable</visible>
 				</control>
-				<control type="textbox">
-					<posx>250</posx>
-					<posy>70</posy>
-					<width>830</width>
-					<height>83</height>
-					<font>font12</font>
-					<align>justify</align>
-					<textcolor>grey2</textcolor>
-					<label>$INFO[ListItem.Plot]</label>
-				</control>
 			</itemlayout>
 			<focusedlayout condition="Container.Content(Episodes)" height="165" width="1180">
 				<control type="image">
@@ -345,6 +345,16 @@
 					<width>200</width>
 					<height>170</height>
 					<texture>GlassOverlay.png</texture>
+				</control>
+				<control type="textbox">
+					<posx>250</posx>
+					<posy>70</posy>
+					<width>830</width>
+					<height>83</height>
+					<font>font12</font>
+					<align>justify</align>
+					<textcolor>black</textcolor>
+					<label>$INFO[ListItem.Plot]</label>
 				</control>
 				<control type="label">
 					<posx>250</posx>
@@ -414,16 +424,6 @@
 					<height>30</height>
 					<texture>$INFO[ListItem.Overlay,dark/]</texture>
 					<visible>!ListItem.IsResumable</visible>
-				</control>
-				<control type="textbox">
-					<posx>250</posx>
-					<posy>70</posy>
-					<width>830</width>
-					<height>83</height>
-					<font>font12</font>
-					<align>justify</align>
-					<textcolor>black</textcolor>
-					<label>$INFO[ListItem.Plot]</label>
 				</control>
 			</focusedlayout>
 		</control>

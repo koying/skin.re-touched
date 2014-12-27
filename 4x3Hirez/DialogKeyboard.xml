@@ -30,7 +30,7 @@
 			<animation effect="slide" start="0,500" end="0,0" time="400" easing="out" tween="quadratic" >WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="0,500" time="400" easing="in" tween="quadratic" >WindowClose</animation>
 			<animation effect="slide" start="0,0" end="0,500" time="400" easing="in" tween="quadratic" condition="Window.IsVisible(numericinput)">Conditional</animation>
-			<posx>15</posx>
+			<posx>40</posx>
 			<posy>500r</posy>
 			<control type="button">
 				<posx>0</posx>
@@ -44,7 +44,7 @@
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>1250</width>
+				<width>1201</width>
 				<height>60</height>
 				<aspectratio>stretch</aspectratio>
 				<texture border="20">KeyboardEditArea.png</texture>
@@ -53,7 +53,7 @@
 				<description>Edit Text</description>
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>1250</width>
+				<width>1201</width>
 				<height>60</height>
 				<font>font16</font>
 				<align>center</align>
@@ -65,7 +65,7 @@
 				<description>dialog Heading</description>
 				<posx>0</posx>
 				<posy>-30</posy>
-				<width>1250</width>
+				<width>1201</width>
 				<height>20</height>
 				<font>font13_title</font>
 				<textcolor>white</textcolor>

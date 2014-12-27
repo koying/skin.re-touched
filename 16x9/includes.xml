@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include file="defaults.xml" />
-	<include file="ViewsCommon.xml" />
-	<include file="ViewsMetaData.xml" />
-	<include file="ViewsAddonBrowser.xml" />
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesPlayerControls.xml" />
 	<include file="IncludesHomeRecentlyAdded.xml" />
 	<include file="IncludesKeypad.xml" />
 
+	<!-- these are the only files that differ between 4x3Hirez and 16x9 -->
+	<include file="ViewsCommon.xml" />
+	<include file="ViewsMetaData.xml" />
+	<include file="ViewsAddonBrowser.xml" />
+
+	<!-- these are the only two lines in this file that differ between 4x3Hirez and 16x9 -->
 	<constant name="ScreenWidth">1706</constant>
+	<constant name="16x9Offset">213</constant>
+
 	<constant name="ScreenHeight">960</constant>
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
-	<constant name="16x9Offset">213</constant>
 
 	<variable name="BannerThumb">
 		<value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
@@ -579,6 +583,7 @@
 		<texturenofocus border="5">ListNF.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</include>
+
 	<include name="CommonNowPlaying">
 		<control type="group">
 			<posx>80</posx>
@@ -588,7 +593,7 @@
 			<control type="button">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>550</width>
+				<width>370</width>
 				<height>77</height>
 				<texturefocus border="8">IconBack.png</texturefocus>
 				<texturenofocus border="8">IconBack.png</texturenofocus>
@@ -597,7 +602,7 @@
 			<control type="fadelabel">
 				<posx>10</posx>
 				<posy>10</posy>
-				<width>530</width>
+				<width>350</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
@@ -611,7 +616,7 @@
 			<control type="fadelabel">
 				<posx>10</posx>
 				<posy>10</posy>
-				<width>530</width>
+				<width>350</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
@@ -625,7 +630,7 @@
 			<control type="fadelabel">
 				<posx>10</posx>
 				<posy>30</posy>
-				<width>530</width>
+				<width>350</width>
 				<height>20</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
@@ -638,7 +643,7 @@
 			<control type="fadelabel">
 				<posx>10</posx>
 				<posy>55</posy>
-				<width>530</width>
+				<width>350</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
@@ -653,7 +658,7 @@
 			<control type="fadelabel">
 				<posx>10</posx>
 				<posy>55</posy>
-				<width>530</width>
+				<width>350</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
@@ -667,7 +672,7 @@
 			<control type="fadelabel">
 				<posx>10</posx>
 				<posy>55</posy>
-				<width>530</width>
+				<width>350</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
@@ -681,7 +686,7 @@
 			<control type="fadelabel">
 				<posx>10</posx>
 				<posy>55</posy>
-				<width>530</width>
+				<width>350</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>

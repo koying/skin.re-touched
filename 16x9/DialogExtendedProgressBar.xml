@@ -4,20 +4,20 @@
 	<include>dialogeffect</include>
 	<controls>
 		<control type="group">
-			<posx>645r</posx>
+			<posx>435r</posx>
 			<posy>20</posy>
 			<visible>!Window.IsVisible(FullscreenVideo) + !Window.IsVisible(Visualisation)</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>550</width>
+				<width>350</width>
 				<height>77</height>
 				<texture border="8">IconBack.png</texture>
 			</control>
 			<control type="fadelabel" id="30">
 				<posx>10</posx>
 				<posy>10</posy>
-				<width>530</width>
+				<width>330</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
@@ -28,8 +28,8 @@
 			</control>
 			<control type="fadelabel" id="31">
 				<posx>10</posx>
-				<posy>35</posy>
-				<width>530</width>
+				<posy>34</posy>
+				<width>330</width>
 				<height>20</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
@@ -43,7 +43,7 @@
 				<description>progress control</description>
 				<posx>5</posx>
 				<posy>57</posy>
-				<width>540</width>
+				<width>340</width>
 				<height>15</height>
 			</control>
 		</control>
