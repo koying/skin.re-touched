@@ -11,9 +11,12 @@
 	<include file="ViewsMetaData.xml" />
 	<include file="ViewsAddonBrowser.xml" />
 
-	<!-- these are the only two lines in this file that differ between 4x3Hirez and 16x9 -->
+	<!-- these are the only 5 lines in this file that differ between 4x3Hirez and 16x9 -->
 	<constant name="ScreenWidth">1280</constant>
 	<constant name="16x9Offset">0</constant>
+	<constant name="BackgroundWidth">570</constant>
+	<constant name="LabelWidth">550</constant>
+	<constant name="DialogPosition">435r</constant>
 
 	<constant name="ScreenHeight">960</constant>
 	<constant name="FanartCrossfadeTime">500</constant>
@@ -569,7 +572,7 @@
 			<control type="button">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>370</width>
+				<width>BackgroundWidth</width>
 				<height>77</height>
 				<texturefocus border="8">IconBack.png</texturefocus>
 				<texturenofocus border="8">IconBack.png</texturenofocus>
@@ -578,7 +581,7 @@
 			<control type="fadelabel">
 				<posx>10</posx>
 				<posy>10</posy>
-				<width>350</width>
+				<width>LabelWidth</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
@@ -592,7 +595,7 @@
 			<control type="fadelabel">
 				<posx>10</posx>
 				<posy>10</posy>
-				<width>350</width>
+				<width>LabelWidth</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
@@ -606,7 +609,7 @@
 			<control type="fadelabel">
 				<posx>10</posx>
 				<posy>30</posy>
-				<width>350</width>
+				<width>LabelWidth</width>
 				<height>20</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
@@ -619,7 +622,7 @@
 			<control type="fadelabel">
 				<posx>10</posx>
 				<posy>55</posy>
-				<width>350</width>
+				<width>LabelWidth</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
@@ -634,7 +637,7 @@
 			<control type="fadelabel">
 				<posx>10</posx>
 				<posy>55</posy>
-				<width>350</width>
+				<width>LabelWidth</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
@@ -648,7 +651,7 @@
 			<control type="fadelabel">
 				<posx>10</posx>
 				<posy>55</posy>
-				<width>350</width>
+				<width>LabelWidth</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
@@ -662,7 +665,7 @@
 			<control type="fadelabel">
 				<posx>10</posx>
 				<posy>55</posy>
-				<width>350</width>
+				<width>LabelWidth</width>
 				<height>15</height>
 				<scrollout>false</scrollout>
 				<pauseatend>3000</pauseatend>
