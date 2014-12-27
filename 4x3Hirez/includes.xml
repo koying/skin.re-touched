@@ -466,7 +466,7 @@
 		<animation effect="slide" start="0,0" end="336,0" time="0" condition="StringCompare(Container(9002).NumItems,2)">conditional</animation>
 		<animation effect="slide" start="0,0" end="448,0" time="0" condition="StringCompare(Container(9002).NumItems,1)">conditional</animation>
 		<posx>670r</posx>
-		<posy>105r</posy>
+		<posy>95r</posy>
 		<width>660</width>
 		<height>120</height>
 		<onleft>9002</onleft>
@@ -494,18 +494,6 @@
 				<texture>$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 			</control>
-			<control type="label">
-				<posx>5</posx>
-				<posy>82</posy>
-				<width>122</width>
-				<height>20</height>
-				<font>font11</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label]</label>
-			</control>
 		</itemlayout>
 		<focusedlayout height="200" width="132">
 			<control type="image">
@@ -524,18 +512,6 @@
 				<bordersize>12</bordersize>
 				<texture>$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
-			</control>
-			<control type="label">
-				<posx>5</posx>
-				<posy>82</posy>
-				<width>122</width>
-				<height>20</height>
-				<font>font11</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label]</label>
 			</control>
 		</focusedlayout>
 	</include>
