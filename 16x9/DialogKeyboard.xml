@@ -700,7 +700,7 @@
 					<itemgap>0</itemgap>
 					<control type="button" id="309">
 						<description>Layout button</description>
-						<width>185</width>
+						<width>250</width>
 						<height>80</height>
 						<label>20177</label>
 						<onup>302</onup>
@@ -714,7 +714,7 @@
 					</control>
 					<control type="button" id="32">
 						<description>SPACE button</description>
-						<width>695</width>
+						<width>630</width>
 						<height>80</height>
 						<texturenofocus border="5">KeyboardKey.png</texturenofocus>
 						<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
