@@ -862,9 +862,9 @@
 		</control>
 
 		<control type="grouplist" id="9000">
-			<posx>20</posx>
+			<posx>0</posx>
 			<posy>830</posy>
-			<width>960</width>
+			<width>1000</width>
 			<height>50</height>
 			<itemgap>2</itemgap>
 			<align>center</align>
@@ -875,6 +875,7 @@
 			<ondown>49</ondown>
 			<control type="togglebutton" id="8">
 				<description>Play/browse to Show</description>
+				<width>195</width>
 				<include>ButtonInfoDialogsCommonValues</include>
 				<label>208</label>
 				<alttexturefocus border="5">IconBack-focus.png</alttexturefocus>
@@ -884,21 +885,25 @@
 			</control>
 			<control type="button" id="5">
 				<description>Cast/Review</description>
+				<width>195</width>
 				<include>ButtonInfoDialogsCommonValues</include>
 				<label>206</label>
 			</control>
 			<control type="button" id="6">
 				<description>Refresh</description>
+				<width>195</width>
 				<include>ButtonInfoDialogsCommonValues</include>
 				<label>184</label>
 			</control>
 			<control type="button" id="10">
 				<description>Get Art</description>
+				<width>195</width>
 				<include>ButtonInfoDialogsCommonValues</include>
 				<label>13511</label>
 			</control>
 			<control type="button" id="11">
 				<description>Play Trailer</description>
+				<width>195</width>
 				<include>ButtonInfoDialogsCommonValues</include>
 				<label>20410</label>
 				<visible>!IsEmpty(ListItem.Trailer)</visible>
