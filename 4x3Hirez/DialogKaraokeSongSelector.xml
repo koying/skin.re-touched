@@ -2,7 +2,6 @@
 <window type="dialog" id="143">
 	<include>16x9_xPos_Relocation</include>
 	<coordinates>
-		<system>1</system>
 		<posx>442</posx>
 		<posy>220</posy>
 	</coordinates>

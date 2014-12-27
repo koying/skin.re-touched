@@ -2,7 +2,6 @@
 <window id="100">
 	<defaultcontrol always="true">10</defaultcontrol>
 	<coordinates>
-		<system>1</system>
 		<posx>290</posx>
 		<posy>300</posy>
 	</coordinates>
