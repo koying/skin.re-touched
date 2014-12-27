@@ -52,10 +52,7 @@ msgctxt "#31010"
 msgid "Currently logged in as"
 msgstr ""
 
-#. Used for subtitle button in the OSD
-msgctxt "#31011"
-msgid "N/A"
-msgstr ""
+#empty string with id 31011
 
 msgctxt "#31012"
 msgid "Music - Files"
@@ -269,9 +266,7 @@ msgctxt "#31355"
 msgid "Video Menu"
 msgstr ""
 
-msgctxt "#31356"
-msgid "Download Subtitles"
-msgstr ""
+#empty string with id 31356
 
 msgctxt "#31357"
 msgid "Image Info"

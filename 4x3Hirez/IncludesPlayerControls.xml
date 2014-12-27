@@ -922,51 +922,22 @@
 				<colordiffuse>EEFFFFFF</colordiffuse>
 				<texture border="3">PlayerControls-Background.png</texture>
 			</control>
-			<control type="label">
-				<description>header label</description>
-				<posx>0</posx>
-				<posy>10</posy>
-				<height>20</height>
-				<width>80</width>
-				<label>287</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font8_title</font>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<control type="label">
-				<description>Video Has no Subtitles label</description>
-				<posx>0</posx>
-				<posy>40</posy>
-				<height>20</height>
-				<width>80</width>
-				<label>31011</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font10_title</font>
-				<textcolor>grey2</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<visible>!VideoPlayer.HasSubtitles</visible>
-			</control>
-			<control type="togglebutton">
+			<control type="button">
 				<posx>10</posx>
 				<posy>38</posy>
 				<width>60</width>
 				<height>35</height>
 				<hitrect x="5" y="5" w="75" h="80" />
-				<label>31356</label>
+				<label>-</label>
 				<font>-</font>
-				<texturefocus>radiobutton-nofocus.png</texturefocus>
-				<texturenofocus>radiobutton-nofocus.png</texturenofocus>
-				<alttexturefocus>radiobutton-focus.png</alttexturefocus>
-				<alttexturenofocus>radiobutton-focus.png</alttexturenofocus>
+				<texturefocus>icon_subtitles.png</texturefocus>
+				<texturenofocus>icon_subtitles.png</texturenofocus>
 				<onleft>605</onleft>
 				<onright>702</onright>
 				<onup>1000</onup>
 				<ondown>1000</ondown>
 				<onclick>Dialog.Close(VideoOSD,true)</onclick>
 				<onclick>ShowSubtitles</onclick>
-				<usealttexture>VideoPlayer.SubtitlesEnabled</usealttexture>
 				<visible>VideoPlayer.HasSubtitles</visible>
 			</control>
 			<control type="image">
@@ -981,7 +952,7 @@
 				<posy>100</posy>
 				<width>65</width>
 				<height>60</height>
-				<label>31356</label>
+				<label>-</label>
 				<hitrect x="5" y="100" w="75" h="70" />
 				<font>-</font>
 				<texturefocus flipy="true">icon_shift.png</texturefocus>
