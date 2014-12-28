@@ -236,7 +236,7 @@
 							<textcolor>white</textcolor>
 							<align>center</align>
 							<aligny>center</aligny>
-							<label>[B]SYNC[/B]</label>
+							<label>[B]$LOCALIZE[31552][/B]</label>
 							<visible>ListItem.property(sync)</visible>
 						</control>
 						<control type="label">
