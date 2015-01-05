@@ -724,6 +724,7 @@
 			<animation effect="slide" start="0,0" end="-325,0" time="400" tween="quadratic" easing="out" condition="Window.IsVisible(Home) + ![Window.Next(Settings) | Window.Next(Weather)]">WindowClose</animation>
 			<animation effect="slide" end="0,0" start="-325,0" time="400" tween="quadratic" easing="out" condition="Window.IsVisible(Home) + ![Window.Previous(Settings) | Window.Next(Weather)]">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="325,0" time="400" tween="quadratic" easing="out" condition="Window.IsActive(Home)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-55" time="0" tween="quadratic" easing="out" condition="Skin.HasSetting(ShowHomeButtonLiveTV)">Conditional</animation>
 			<posx>-325</posx>
 			<posy>20</posy>
 			<control type="image">
@@ -737,7 +738,7 @@
 				<posx>0</posx>
 				<posy>150</posy>
 				<width>410</width>
-				<height>661</height>
+				<height>771</height>
 				<onleft>9000</onleft>
 				<onright>1000</onright>
 				<onup>10</onup>
@@ -851,6 +852,13 @@
 	</include>
 	<include name="HomeMainMenuItems">
 		<item id="1">
+			<label>31556</label>
+			<onclick>ActivateWindow(TVChannels)</onclick>
+			<icon>icon-livetv.png</icon>
+			<thumb>-</thumb>
+			<visible>Skin.HasSetting(ShowHomeButtonLiveTV)</visible>
+		</item>
+		<item id="2">
 			<label>3</label>
 			<onclick condition="StringCompare(Window(Home).Property(VideosDirectLink),True)">ActivateWindow(Videos)</onclick>
 			<onclick condition="!StringCompare(Window(Home).Property(VideosDirectLink),True)">ActivateWindow(Videos,root)</onclick>
@@ -859,7 +867,7 @@
 			<thumb>-</thumb>
 			<visible>!Skin.HasSetting(HideHomeButtonVideo)</visible>
 		</item>
-		<item id="2">
+		<item id="3">
 			<label>20342</label>
 			<onclick>SetProperty(VideosDirectLink,True,Home)</onclick>
 			<onclick>ActivateWindow(Videos,MovieTitles,Return)</onclick>
@@ -868,7 +876,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<visible>!Skin.HasSetting(HideHomeButtonMovies)</visible>
 		</item>
-		<item id="3">
+		<item id="4">
 			<label>20343</label>
 			<onclick>SetProperty(VideosDirectLink,True,Home)</onclick>
 			<onclick>ActivateWindow(Videos,TVShowTitles,Return)</onclick>
@@ -877,21 +885,21 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<visible>!Skin.HasSetting(HideHomeButtonTVShows)</visible>
 		</item>
-		<item id="4">
+		<item id="5">
 			<label>2</label>
 			<onclick>ActivateWindow(Music)</onclick>
 			<icon>icon-music.png</icon>
 			<thumb>-</thumb>
 			<visible>!Skin.HasSetting(HideHomeButtonMusic)</visible>
 		</item>
-		<item id="5">
+		<item id="6">
 			<label>1</label>
 			<onclick>ActivateWindow(Pictures)</onclick>
 			<icon>icon-pictures.png</icon>
 			<thumb>-</thumb>
 			<visible>!Skin.HasSetting(HideHomeButtonPictures)</visible>
 		</item>
-		<item id="6">
+		<item id="7">
 			<label>0</label>
 			<onclick>ActivateWindow(Programs,Addons,return)</onclick>
 			<icon>icon-programs.png</icon>
