@@ -30,6 +30,14 @@
 		<value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
 		<value condition="IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Icon]</value>
 	</variable>
+	<variable name="PVRSection">
+		<value condition="Window.IsVisible(TVChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(TVRecordings) | Window.IsVisible(TVTimers) | Window.IsVisible(TVSearch)">$LOCALIZE[31556]</value>
+		<value condition="Window.IsVisible(RadioChannels) | Window.IsVisible(RadioGuide) | Window.IsVisible(RadioRecordings)Window.IsVisible(RadioTimers) | Window.IsVisible(RadioSearch)">$LOCALIZE[19021]</value>
+	</variable>
+	<variable name="PVRSwitch">
+		<value condition="Window.IsVisible(TVChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(TVRecordings) | Window.IsVisible(TVTimers) | Window.IsVisible(TVSearch)">$LOCALIZE[19021]</value>
+		<value condition="Window.IsVisible(RadioChannels) | Window.IsVisible(RadioGuide) | Window.IsVisible(RadioRecordings)Window.IsVisible(RadioTimers) | Window.IsVisible(RadioSearch)">$LOCALIZE[31556]</value>
+	</variable>
 
 	<include name="CommonBackground">
 		<control type="image">
@@ -445,19 +453,20 @@
 					<onclick condition="!Container.CanFilterAdvanced">SendClick(19)</onclick>
 					<onclick condition="Container.CanFilterAdvanced">Filter</onclick>
 					<icon>icon_filter.png</icon>
-					<visible>!Container.Filtered</visible>
+					<visible>!Container.Filtered + ![Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch)]</visible>
 				</item>
 				<item>
 					<label>587</label>
 					<onclick condition="!Container.CanFilterAdvanced">SendClick(19)</onclick>
 					<onclick condition="Container.CanFilterAdvanced">Filter</onclick>
 					<icon>icon_filter_on.png</icon>
-					<visible>Container.Filtered</visible>
+					<visible>Container.Filtered + ![Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch)]</visible>
 				</item>
 				<item>
 					<label>31202</label>
 					<onclick>Container.NextViewMode</onclick>
 					<icon>icon_view.png</icon>
+					<visible>![Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch)]</visible>
 				</item>
 				<item>
 					<label>31200</label>
