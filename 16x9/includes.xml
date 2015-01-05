@@ -10,6 +10,7 @@
 	<include file="ViewsCommon.xml" />
 	<include file="ViewsMetaData.xml" />
 	<include file="ViewsAddonBrowser.xml" />
+	<include file="ViewsPVR.xml" />
 
 	<!-- these are the only 5 lines in this file that differ between 4x3Hirez and 16x9 -->
 	<constant name="ScreenWidth">1706</constant>
