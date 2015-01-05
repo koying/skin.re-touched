@@ -23,9 +23,9 @@
 					<icon>icon_profile.png</icon>
 				</item>
 				<item>
-					<label>20077</label>
-					<onclick>ActivateWindow(SkinSettings)</onclick>
-					<icon>icon_skin.png</icon>
+					<label>24001</label>
+					<onclick>ActivateWindow(Addonbrowser)</onclick>
+					<icon>icon_addons.png</icon>
 				</item>
 				<item>
 					<label>130</label>
@@ -185,10 +185,10 @@
 					<icon>icon_big_weather.png</icon>
 				</item>
 				<item id="6">
-					<label>24001</label>
-					<label2>31408</label2>
-					<onclick>ActivateWindow(AddonBrowser)</onclick>
-					<icon>icon_big_addons.png</icon>
+					<label>31556</label>
+					<label2>31555</label2>
+					<onclick>ActivateWindow(PVRSettings)</onclick>
+					<icon>icon_big_tv.png</icon>
 				</item>
 				<item id="7">
 					<label>14036</label>
