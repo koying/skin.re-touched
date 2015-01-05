@@ -36,7 +36,7 @@
 	</variable>
 	<variable name="PVRSwitch">
 		<value condition="Window.IsVisible(TVChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(TVRecordings) | Window.IsVisible(TVTimers) | Window.IsVisible(TVSearch)">$LOCALIZE[19021]</value>
-		<value condition="Window.IsVisible(RadioChannels) | Window.IsVisible(RadioGuide) | Window.IsVisible(RadioRecordings)Window.IsVisible(RadioTimers) | Window.IsVisible(RadioSearch)">$LOCALIZE[31556]</value>
+		<value condition="Window.IsVisible(RadioChannels) | Window.IsVisible(RadioGuide) | Window.IsVisible(RadioRecordings) | Window.IsVisible(RadioTimers) | Window.IsVisible(RadioSearch)">$LOCALIZE[31556]</value>
 	</variable>
 
 	<include name="CommonBackground">
@@ -484,10 +484,10 @@
 	<include name="SubMenuCommonLayout">
 		<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(Home)">WindowClose</animation>
 		<animation effect="fade" end="100" start="0" time="300" condition="Window.Previous(Home)">WindowOpen</animation>
-		<animation effect="slide" start="0,0" end="112,0" time="0" condition="StringCompare(Container(9002).NumItems,4)">conditional</animation>
-		<animation effect="slide" start="0,0" end="224,0" time="0" condition="StringCompare(Container(9002).NumItems,3)">conditional</animation>
-		<animation effect="slide" start="0,0" end="336,0" time="0" condition="StringCompare(Container(9002).NumItems,2)">conditional</animation>
-		<animation effect="slide" start="0,0" end="448,0" time="0" condition="StringCompare(Container(9002).NumItems,1)">conditional</animation>
+		<animation effect="slide" start="0,0" end="132,0" time="0" condition="StringCompare(Container(9002).NumItems,4)">conditional</animation>
+		<animation effect="slide" start="0,0" end="264,0" time="0" condition="StringCompare(Container(9002).NumItems,3)">conditional</animation>
+		<animation effect="slide" start="0,0" end="396,0" time="0" condition="StringCompare(Container(9002).NumItems,2)">conditional</animation>
+		<animation effect="slide" start="0,0" end="528,0" time="0" condition="StringCompare(Container(9002).NumItems,1)">conditional</animation>
 		<posx>670r</posx>
 		<posy>95r</posy>
 		<width>660</width>
