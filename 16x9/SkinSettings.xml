@@ -186,6 +186,33 @@
 					<onclick>Skin.ToggleSetting(HideHomeButtonWeather)</onclick>
 					<selected>!Skin.HasSetting(HideHomeButtonWeather)</selected>
 				</control>
+				<control type="radiobutton" id="112">
+					<description>Use custom background</description>
+					<height>55</height>
+					<width>920</width>
+					<font>font13</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus border="5">ListFO.png</texturefocus>
+					<texturenofocus border="5">ListNF.png</texturenofocus>
+					<label>$LOCALIZE[31553]</label>
+					<onclick>Skin.ToggleSetting(UseCustomBackground)</onclick>
+					<selected>Skin.HasSetting(UseCustomBackground)</selected>
+				</control>
+				<control type="button" id="113">
+					<height>55</height>
+					<width>920</width>
+					<label>- $LOCALIZE[31554]</label>
+					<label2>$INFO[Skin.String(CustomBackground)]</label2>
+					<font>font13</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus border="5">ListFO.png</texturefocus>
+					<texturenofocus border="5">ListNF.png</texturenofocus>
+					<onclick>Skin.SetImage(CustomBackground)</onclick>
+					<enable>Skin.HasSetting(UseCustomBackground)</enable>
+				</control>
+
 			</control>
 			<control type="grouplist" id="200">
 				<description>control area</description>

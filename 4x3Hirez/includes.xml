@@ -39,6 +39,16 @@
 			<width>ScreenWidth</width>
 			<height>ScreenHeight</height>
 			<texture fallback="special://skin/background/SKINDEFAULT.jpg">special://skin/background/$INFO[Skin.CurrentTheme].jpg</texture>
+			<visible>!Skin.HasSetting(UseCustomBackground)</visible>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<aspectratio>scale</aspectratio>
+			<width>ScreenWidth</width>
+			<height>ScreenHeight</height>
+			<texture>$INFO[Skin.String(CustomBackground)]</texture>
+			<visible>Skin.HasSetting(UseCustomBackground)</visible>
 		</control>
 		<include>CommonHeader</include>
 	</include>

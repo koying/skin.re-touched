@@ -1,3 +1,6 @@
+v3.0.4
+- Add option to use a custom background
+
 v3.0.3
 - Cosmetics
 
