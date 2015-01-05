@@ -19,7 +19,7 @@
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation_Zoom</include>
-			<include>CommonRootView</include> <!-- view id = 50 -->
+			<include>PVRRecordingsView</include> <!-- view id = 50 -->
 		</control>
 		<include>ScrollBarCommons</include>
 		<include>MediaSubMenu</include>
