@@ -1,5 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<include name="PVRTimersView">
+		<control type="list" id="50">
+			<include>PVRCommonView</include>
+		</control>
+	</include>
+	<include name="PVRSearchView">
+		<control type="list" id="50">
+			<include>PVRCommonView</include>
+		</control>
+	</include>
+	<include name="PVRCommonView">
+		<posx>120</posx>
+		<posy>120</posy>
+		<width>1100</width>
+		<height>720</height>
+		<onleft>2</onleft>
+		<onright>60</onright>
+		<onup>50</onup>
+		<ondown>50</ondown>
+		<viewtype label="535">list</viewtype>
+		<pagecontrol>60</pagecontrol>
+		<scrolltime>200</scrolltime>
+		<itemlayout height="90" width="1100">
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1100</width>
+				<height>90</height>
+				<texture border="5">ListNF.png</texture>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>10</posy>
+				<width>70</width>
+				<height>70</height>
+				<texture background="true">$VAR[PosterThumb]</texture>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="label">
+				<posx>90</posx>
+				<posy>0</posy>
+				<width>990</width>
+				<height>60</height>
+				<font>font28_title</font>
+				<textcolor>grey2</textcolor>
+				<selectedcolor>selected</selectedcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+			<control type="label">
+				<posx>90</posx>
+				<posy>0</posy>
+				<width>990</width>
+				<height>60</height>
+				<font>font16</font>
+				<textcolor>grey2</textcolor>
+				<selectedcolor>selected</selectedcolor>
+				<align>right</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Date]</label>
+			</control>
+			<control type="label">
+				<posx>90</posx>
+				<posy>40</posy>
+				<width>990</width>
+				<height>50</height>
+				<font>font16</font>
+				<textcolor>grey2</textcolor>
+				<selectedcolor>selected</selectedcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.ChannelNumberLabel,,. ]$INFO[ListItem.ChannelName]</label>
+			</control>
+			<control type="label">
+				<posx>90</posx>
+				<posy>40</posy>
+				<width>990</width>
+				<height>50</height>
+				<font>font16</font>
+				<textcolor>grey3</textcolor>
+				<selectedcolor>selected</selectedcolor>
+				<align>right</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Comment]</label>
+			</control>
+		</itemlayout>
+		<focusedlayout height="90" width="1100">
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1100</width>
+				<height>90</height>
+				<texture border="5">ListFO.png</texture>
+				<include>VisibleFadeEffect</include>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>10</posy>
+				<width>70</width>
+				<height>70</height>
+				<texture background="true">$VAR[PosterThumb]</texture>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="label">
+				<posx>90</posx>
+				<posy>0</posy>
+				<width>990</width>
+				<height>60</height>
+				<font>font28_title</font>
+				<textcolor>black</textcolor>
+				<selectedcolor>selected</selectedcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+			<control type="label">
+				<posx>90</posx>
+				<posy>0</posy>
+				<width>990</width>
+				<height>60</height>
+				<font>font16</font>
+				<textcolor>black</textcolor>
+				<selectedcolor>selected</selectedcolor>
+				<align>right</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Date]</label>
+			</control>
+			<control type="label">
+				<posx>90</posx>
+				<posy>40</posy>
+				<width>990</width>
+				<height>50</height>
+				<font>font16</font>
+				<textcolor>black</textcolor>
+				<selectedcolor>selected</selectedcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.ChannelNumberLabel,,. ]$INFO[ListItem.ChannelName]</label>
+			</control>
+			<control type="label">
+				<posx>90</posx>
+				<posy>40</posy>
+				<width>990</width>
+				<height>50</height>
+				<font>font16</font>
+				<textcolor>black</textcolor>
+				<selectedcolor>selected</selectedcolor>
+				<align>right</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Comment]</label>
+			</control>
+		</focusedlayout>
+	</include>
 	<include name="PVRChannelsView">
 		<control type="list" id="50">
 			<posx>120</posx>
@@ -39,7 +193,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
+					<label>$INFO[ListItem.ChannelNumberLabel,,. ]$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
 					<posx>90</posx>
@@ -89,7 +243,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
+					<label>$INFO[ListItem.ChannelNumberLabel,,. ]$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
 					<posx>90</posx>
