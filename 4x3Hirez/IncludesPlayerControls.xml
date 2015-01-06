@@ -721,6 +721,7 @@
 		<control type="group">
 			<posx>150r</posx>
 			<posy>65r</posy>
+			<visible>!VideoPlayer.Content(LiveTV)</visible>
 			<control type="button" id="606">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -731,7 +732,7 @@
 				<texturefocus>-</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<onclick>PlayerControl(Repeat)</onclick>
-				<onleft>605</onleft>
+				<onleft>100</onleft>
 				<onright>607</onright>
 				<onup>1000</onup>
 				<ondown>1000</ondown>
@@ -804,49 +805,105 @@
 				<alttexturenofocus>OSDRandomOnNF.png</alttexturenofocus>
 				<onclick>PlayerControl(Random)</onclick>
 				<onleft>606</onleft>
-				<onright>701</onright>
+				<onright>100</onright>
 				<onup>1000</onup>
 				<ondown>1000</ondown>
 			</control>
 		</control>
-		<control type="group" id="100">
-			<posx>415</posx>
+		<control type="grouplist" id="800">
+			<posx>210r</posx>
+			<posy>65r</posy>
+			<onup>1000</onup>
+			<ondown>1000</ondown>
+			<onleft>100</onleft>
+			<onright>100</onright>
+			<itemgap>0</itemgap>
+			<orientation>horizontal</orientation>
+			<visible>VideoPlayer.Content(LiveTV)</visible>
+			<control type="button" id="801">
+				<width>60</width>
+				<height>60</height>
+				<label>19019</label>
+				<font>-</font>
+				<texturefocus>OSDChannelListFO.png</texturefocus>
+				<texturenofocus>OSDChannelListNF.png</texturenofocus>
+				<onclick>ActivateWindow(PVROSDChannels)</onclick>
+				<onclick>Dialog.Close(VideoOSD)</onclick>
+			</control>
+			<control type="button" id="802">
+				<width>60</width>
+				<height>60</height>
+				<label>$LOCALIZE[19029]$INFO[VideoPlayer.ChannelName, - ]</label>
+				<font>-</font>
+				<texturefocus>OSDepgFO.png</texturefocus>
+				<texturenofocus>OSDepgNF.png</texturenofocus>
+				<onclick>ActivateWindow(PVROSDGuide)</onclick>
+				<onclick>Dialog.Close(VideoOSD)</onclick>
+			</control>
+			<control type="button" id="803">
+				<width>60</width>
+				<height>60</height>
+				<label>31356</label>
+				<font>-</font>
+				<texturefocus>OSDTeleTextFO.png</texturefocus>
+				<texturenofocus>OSDTeleTextNF.png</texturenofocus>
+				<onclick>ActivateWindow(Teletext)</onclick>
+			</control>
+		</control>
+		<control type="grouplist" id="100">
+			<posx>0</posx>
 			<posy>82r</posy>
+			<width>ScreenWidth</width>
+			<align>center</align>
+			<itemgap>0</itemgap>
+			<orientation>horizontal</orientation>
+			<onup>1000</onup>
+			<ondown>1000</ondown>
+			<onleft condition="!VideoPlayer.Content(LiveTV)">607</onleft>
+			<onleft condition="VideoPlayer.Content(LiveTV)">800</onleft>
+			<onright condition="!VideoPlayer.Content(LiveTV)">606</onright>
+			<onright condition="VideoPlayer.Content(LiveTV)">800</onright>
 			<animation effect="fade" time="200">VisibleChange</animation>
-			<include>16x9_xPos_Relocation</include>
 			<control type="button" id="600">
-				<posx>0</posx>
-				<posy>0</posy>
 				<width>80</width>
 				<height>80</height>
 				<label>210</label>
 				<font>-</font>
 				<texturefocus>OSDPrevTrackFO.png</texturefocus>
 				<texturenofocus>OSDPrevTrackNF.png</texturenofocus>
-				<onleft>705</onleft>
-				<onright>601</onright>
-				<onup>1000</onup>
-				<ondown>1000</ondown>
 				<onclick>PlayerControl(Previous)</onclick>
+				<visible>!VideoPlayer.Content(LiveTV)</visible>
+			</control>
+			<control type="button" id="700">
+				<width>80</width>
+				<height>80</height>
+				<label>210</label>
+				<font>-</font>
+				<texturefocus>OSDChannelUPFO.png</texturefocus>
+				<texturenofocus>OSDChannelUPNF.png</texturenofocus>
+				<onclick>PlayerControl(Previous)</onclick>
+				<visible>VideoPlayer.Content(LiveTV)</visible>
+			</control>
+			<control type="button" id="701">
+				<width>80</width>
+				<height>80</height>
+				<label>209</label>
+				<font>-</font>
+				<texturefocus>OSDChannelDownFO.png</texturefocus>
+				<texturenofocus>OSDChannelDownNF.png</texturenofocus>
+				<onclick>PlayerControl(Next)</onclick>
+				<visible>VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="button" id="601">
-				<posx>80</posx>
-				<posy>0</posy>
 				<width>80</width>
 				<height>80</height>
 				<label>31354</label>
 				<font>-</font>
 				<texturefocus>OSDRewindFO.png</texturefocus>
 				<texturenofocus>OSDRewindNF.png</texturenofocus>
-				<onleft>600</onleft>
-				<onright>602</onright>
-				<onup>1000</onup>
-				<ondown>1000</ondown>
 				<onclick>PlayerControl(Rewind)</onclick>
 			</control>
 			<control type="togglebutton" id="602">
-				<posx>160</posx>
-				<posy>0</posy>
 				<width>80</width>
 				<height>80</height>
 				<label>31351</label>
@@ -857,61 +914,54 @@
 				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
 				<alttexturefocus>OSDPlayFO.png</alttexturefocus>
 				<alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
-				<onleft>601</onleft>
-				<onright>603</onright>
-				<onup>1000</onup>
-				<ondown>1000</ondown>
 				<onclick>PlayerControl(Play)</onclick>
 			</control>
 			<control type="button" id="603">
-				<posx>240</posx>
-				<posy>0</posy>
 				<width>80</width>
 				<height>80</height>
 				<label>31352</label>
 				<font>-</font>
 				<texturefocus>OSDStopFO.png</texturefocus>
 				<texturenofocus>OSDStopNF.png</texturenofocus>
-				<onleft>602</onleft>
-				<onright>604</onright>
-				<onup>1000</onup>
-				<ondown>1000</ondown>
 				<onclick>PlayerControl(Stop)</onclick>
 			</control>
 			<control type="button" id="604">
-				<posx>320</posx>
-				<posy>0</posy>
 				<width>80</width>
 				<height>80</height>
 				<label>31353</label>
 				<font>-</font>
 				<texturefocus>OSDForwardFO.png</texturefocus>
 				<texturenofocus>OSDForwardNF.png</texturenofocus>
-				<onleft>603</onleft>
-				<onright>605</onright>
-				<onup>1000</onup>
-				<ondown>1000</ondown>
 				<onclick>PlayerControl(Forward)</onclick>
 			</control>
 			<control type="button" id="605">
-				<posx>400</posx>
-				<posy>0</posy>
 				<width>80</width>
 				<height>80</height>
 				<label>209</label>
 				<font>-</font>
 				<texturefocus>OSDNextTrackFO.png</texturefocus>
 				<texturenofocus>OSDNextTrackNF.png</texturenofocus>
-				<onleft>604</onleft>
-				<onright>701</onright>
-				<onup>1000</onup>
-				<ondown>1000</ondown>
 				<onclick>PlayerControl(Next)</onclick>
+				<visible>!VideoPlayer.Content(LiveTV)</visible>
+			</control>
+			<control type="togglebutton" id="703">
+				<width>80</width>
+				<height>80</height>
+				<label>264</label>
+				<altlabel>265</altlabel>
+				<font>-</font>
+				<texturefocus>OSDRecordOffFO.png</texturefocus>
+				<texturenofocus>OSDRecordOffNF.png</texturenofocus>
+				<usealttexture>Player.Recording</usealttexture>
+				<alttexturefocus>OSDRecordOnFO.png</alttexturefocus>
+				<alttexturenofocus>OSDRecordOnNF.png</alttexturenofocus>
+				<onclick>PlayerControl(Record)</onclick>
+				<visible>Player.CanRecord</visible>
 			</control>
 		</control>
 
 		<control type="group">
-			<visible>Window.IsVisible(FullscreenVideo)</visible>
+			<visible>Window.IsVisible(FullscreenVideo) + !VideoPlayer.Content(LiveTV)</visible>
 			<posx>80r</posx>
 			<posy>385</posy>
 			<control type="image">
@@ -932,7 +982,7 @@
 				<font>-</font>
 				<texturefocus>icon_subtitles.png</texturefocus>
 				<texturenofocus>icon_subtitles.png</texturenofocus>
-				<onleft>605</onleft>
+				<onleft>100</onleft>
 				<onright>702</onright>
 				<onup>1000</onup>
 				<ondown>1000</ondown>
@@ -957,7 +1007,7 @@
 				<font>-</font>
 				<texturefocus flipy="true">icon_shift.png</texturefocus>
 				<texturenofocus flipy="true">icon_shift.png</texturenofocus>
-				<onleft>605</onleft>
+				<onleft>100</onleft>
 				<onright>702</onright>
 				<onup>1000</onup>
 				<ondown>1000</ondown>
