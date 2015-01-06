@@ -33,7 +33,7 @@
 	</variable>
 	<variable name="PVRSection">
 		<value condition="Window.IsVisible(TVChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(TVRecordings) | Window.IsVisible(TVTimers) | Window.IsVisible(TVSearch)">$LOCALIZE[31556]</value>
-		<value condition="Window.IsVisible(RadioChannels) | Window.IsVisible(RadioGuide) | Window.IsVisible(RadioRecordings)Window.IsVisible(RadioTimers) | Window.IsVisible(RadioSearch)">$LOCALIZE[19021]</value>
+		<value condition="Window.IsVisible(RadioChannels) | Window.IsVisible(RadioGuide) | Window.IsVisible(RadioRecordings) | Window.IsVisible(RadioTimers) | Window.IsVisible(RadioSearch)">$LOCALIZE[19021]</value>
 	</variable>
 	<variable name="PVRSwitch">
 		<value condition="Window.IsVisible(TVChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(TVRecordings) | Window.IsVisible(TVTimers) | Window.IsVisible(TVSearch)">$LOCALIZE[19021]</value>
@@ -440,6 +440,10 @@
 		</control>
 	</include>
 	<include name="MediaSubMenu">
+		<control type="button" id="2">
+			<description>View button needed for panel below to work</description>
+			<visible>false</visible>
+		</control>
 		<control type="button" id="19">
 			<description>Filter button needed for panel below to work</description>
 			<visible>false</visible>
@@ -465,9 +469,10 @@
 				</item>
 				<item>
 					<label>31202</label>
-					<onclick>Container.NextViewMode</onclick>
+					<onclick condition="![Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)]">Container.NextViewMode</onclick>
+					<onclick condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">SendClick(2)</onclick>
 					<icon>icon_view.png</icon>
-					<visible>![Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch)]</visible>
+					<visible>![Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch)]</visible>
 				</item>
 				<item>
 					<label>31200</label>
@@ -926,6 +931,122 @@
 		<font>font16</font>
 		<align>center</align>
 		<aligny>center</aligny>
+	</include>
+	<include name="PVRMenu">
+		<control type="group">
+			<visible>Skin.HasSetting(MediaSubMenuVisible)</visible>
+			<include>VisibleFadeEffect</include>
+			<control type="button">
+				<description>Hidden button to close the sort when its focused</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>ScreenWidth</width>
+				<height>ScreenHeight</height>
+				<texturenofocus>-</texturenofocus>
+				<texturefocus>-</texturefocus>
+				<onclick>Skin.Reset(MediaSubMenuVisible)</onclick>
+			</control>
+			<control type="group">
+				<posx>340r</posx>
+				<posy>130</posy>
+				<control type="image">
+					<description>Shadow Background</description>
+					<posx>-30</posx>
+					<posy>-30</posy>
+					<width>380</width>
+					<height>500</height>
+					<texture border="30">ShadowBorder.png</texture>
+				</control>
+				<control type="button">
+					<description>Panel Background image</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>320</width>
+					<height>440</height>
+					<texturefocus border="5">SubBack.png</texturefocus>
+					<texturenofocus border="5">SubBack.png</texturenofocus>
+					<onclick>noop</onclick>
+				</control>
+				<control type="image">
+					<description>Panel Forground image</description>
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>300</width>
+					<height>420</height>
+					<texture border="5">SubBack2.png</texture>
+				</control>
+				<control type="image">
+					<description>Panel Arrow image</description>
+					<posx>270</posx>
+					<posy>-34</posy>
+					<width>40</width>
+					<height>40</height>
+					<texture>arrow-big-up.png</texture>
+				</control>
+				<control type="grouplist">
+					<posx>11</posx>
+					<posy>10</posy>
+					<width>298</width>
+					<height>420</height>
+					<onleft>9000</onleft>
+					<onright>50</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<itemgap>0</itemgap>
+					<control type="button" id="201">
+						<description>Sort by button</description>
+						<include>ButtonCommonValues2</include>
+						<label>19019</label>
+						<onclick condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">NextChannelGroup</onclick>
+						<onclick condition="IsEmpty(Window.Property(IsRadio))">ReplaceWindow(TVChannels)</onclick>
+						<onclick condition="!IsEmpty(Window.Property(IsRadio))">ReplaceWindow(RadioChannels)</onclick>
+					</control>
+					<control type="button" id="202">
+						<description>Sort by button</description>
+						<include>ButtonCommonValues2</include>
+						<label>22020</label>
+						<onclick condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">NextChannelGroup</onclick>
+						<onclick condition="IsEmpty(Window.Property(IsRadio))">ReplaceWindow(TVGuide)</onclick>
+						<onclick condition="!IsEmpty(Window.Property(IsRadio))">ReplaceWindow(RadioGuide)</onclick>
+					</control>
+					<control type="button" id="203">
+						<description>Sort by button</description>
+						<include>ButtonCommonValues2</include>
+						<label>19163</label>
+						<onclick condition="IsEmpty(Window.Property(IsRadio))">ReplaceWindow(TVRecordings)</onclick>
+						<onclick condition="!IsEmpty(Window.Property(IsRadio))">ReplaceWindow(RadioRecordings)</onclick>
+					</control>
+					<control type="button" id="204">
+						<description>Sort by button</description>
+						<include>ButtonCommonValues2</include>
+						<label>19040</label>
+						<onclick condition="IsEmpty(Window.Property(IsRadio))">ReplaceWindow(TVTimers)</onclick>
+						<onclick condition="!IsEmpty(Window.Property(IsRadio))">ReplaceWindow(RadioTimers)</onclick>
+					</control>
+					<control type="button" id="205">
+						<description>Sort by button</description>
+						<include>ButtonCommonValues2</include>
+						<label>137</label>
+						<onclick condition="IsEmpty(Window.Property(IsRadio))">ReplaceWindow(TVSearch)</onclick>
+						<onclick condition="!IsEmpty(Window.Property(IsRadio))">ReplaceWindow(RadioSearch)</onclick>
+					</control>
+					<control type="button" id="206">
+						<description>Sort by button</description>
+						<include>ButtonCommonValues2</include>
+						<label>$VAR[PVRSwitch]</label>
+						<onclick condition="IsEmpty(Window.Property(IsRadio))">ReplaceWindow(RadioChannels)</onclick>
+						<onclick condition="!IsEmpty(Window.Property(IsRadio))">ReplaceWindow(TVChannels)</onclick>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>100</posy>
+						<width>298</width>
+						<height>10</height>
+						<texture>shelf_shadow.png</texture>
+					</control>
+				</control>
+			</control>
+		</control>
 	</include>
 	<include name="16x9_xPos_Relocation">
 		<animation effect="slide" start="0,0" end="16x9Offset,0" time="0" condition="true">conditional</animation>

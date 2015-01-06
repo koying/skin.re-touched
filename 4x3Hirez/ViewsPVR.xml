@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<include name="PVREPGNowView">
+		<control type="list" id="11">
+			<include>PVRCommonView</include>
+		</control>
+	</include>
+	<include name="PVREPGNextView">
+		<control type="list" id="12">
+			<include>PVRCommonView</include>
+		</control>
+	</include>
+	<include name="PVREPGChannelView">
+		<control type="list" id="13">
+			<include>PVRCommonView</include>
+		</control>
+	</include>
 	<include name="PVRTimersView">
 		<control type="list" id="50">
 			<include>PVRCommonView</include>
@@ -364,6 +379,10 @@
 					<label>$INFO[ListItem.Label2]</label>
 				</control>
 			</focusedlayout>
+		</control>
+	</include>
+	<include name="PVREPGGuideView">
+		<control type="" id="10">
 		</control>
 	</include>
 </includes>
