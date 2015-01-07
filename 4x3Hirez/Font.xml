@@ -23,6 +23,11 @@
 			<size>20</size>
 		</font>
 		<font>
+			<name>font14</name>
+			<filename>Arial.ttf</filename>
+			<size>22</size>
+		</font>
+		<font>
 			<name>font16</name>
 			<filename>Arial.ttf</filename>
 			<size>25</size>
@@ -97,6 +102,11 @@
 			<name>font13</name>
 			<filename>Arial.ttf</filename>
 			<size>20</size>
+		</font>
+		<font>
+			<name>font14</name>
+			<filename>Arial.ttf</filename>
+			<size>22</size>
 		</font>
 		<font>
 			<name>font16</name>
