@@ -382,3 +382,7 @@ msgstr ""
 msgctxt "#31558"
 msgid "Hide visualization background"
 msgstr ""
+
+msgctxt "#31559"
+msgid "Channel settings"
+msgstr ""
