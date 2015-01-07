@@ -374,3 +374,11 @@ msgstr ""
 msgctxt "#31556"
 msgid "Live TV"
 msgstr ""
+
+msgctxt "#31557"
+msgid "Hide video background"
+msgstr ""
+
+msgctxt "#31558"
+msgid "Hide visualization background"
+msgstr ""

@@ -225,6 +225,32 @@
 					<onclick>Skin.SetImage(CustomBackground)</onclick>
 					<enable>Skin.HasSetting(UseCustomBackground)</enable>
 				</control>
+				<control type="radiobutton" id="114">
+					<description>Hide video background</description>
+					<height>55</height>
+					<width>920</width>
+					<font>font13</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus border="5">ListFO.png</texturefocus>
+					<texturenofocus border="5">ListNF.png</texturenofocus>
+					<label>$LOCALIZE[31557]</label>
+					<onclick>Skin.ToggleSetting(HideVideoBackground)</onclick>
+					<selected>Skin.HasSetting(HideVideoBackground)</selected>
+				</control>
+				<control type="radiobutton" id="115">
+					<description>Hide viz background</description>
+					<height>55</height>
+					<width>920</width>
+					<font>font13</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<texturefocus border="5">ListFO.png</texturefocus>
+					<texturenofocus border="5">ListNF.png</texturenofocus>
+					<label>$LOCALIZE[31558]</label>
+					<onclick>Skin.ToggleSetting(HideVizBackground)</onclick>
+					<selected>Skin.HasSetting(HideVizBackground)</selected>
+				</control>
 
 			</control>
 			<control type="grouplist" id="200">

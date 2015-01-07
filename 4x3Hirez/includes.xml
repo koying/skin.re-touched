@@ -59,6 +59,29 @@
 			<texture>$INFO[Skin.String(CustomBackground)]</texture>
 			<visible>Skin.HasSetting(UseCustomBackground)</visible>
 		</control>
+		<control type="videowindow">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>ScreenWidth</width>
+			<height>ScreenHeight</height>
+			<visible>!Skin.HasSetting(HideVideoBackground) + Player.HasVideo + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
+		</control>
+		<control type="visualisation">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>ScreenWidth</width>
+			<height>ScreenHeight</height>
+			<visible>!Skin.HasSetting(HideVizBackground) + Player.HasAudio</visible>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>ScreenWidth</width>
+			<height>ScreenHeight</height>
+			<texture>black.png</texture>
+			<colordiffuse>70000000</colordiffuse>
+			<visible>[!Skin.HasSetting(HideVizBackground) + Player.HasAudio] | [!Skin.HasSetting(HideVideoBackground) + Player.HasVideo + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)]</visible>
+		</control>
 		<include>CommonHeader</include>
 	</include>
 	<include name="CommonBackgroundOverlay">
