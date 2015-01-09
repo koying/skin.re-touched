@@ -48,7 +48,7 @@
 			<posy>60</posy>
 			<width>770</width>
 			<height>720</height>
-			<onleft>2</onleft>
+			<onleft>60</onleft>
 			<onright>60</onright>
 			<onup>50</onup>
 			<ondown>50</ondown>
@@ -213,8 +213,8 @@
 			<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 			<textureslidernib>ScrollBarNib.png</textureslidernib>
 			<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-			<onleft>60</onleft>
-			<onright>60</onright>
+			<onleft>20</onleft>
+			<onright>20</onright>
 			<ondown>60</ondown>
 			<onup>60</onup>
 			<showonepage>false</showonepage>
