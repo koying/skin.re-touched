@@ -46,7 +46,7 @@
 		<control type="list" id="11">
 			<posx>0</posx>
 			<posy>60</posy>
-			<width>800</width>
+			<width>770</width>
 			<height>720</height>
 			<onleft>2</onleft>
 			<onright>60</onright>
@@ -55,13 +55,13 @@
 			<viewtype label="535">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
-			<itemlayout height="90" width="800">
+			<itemlayout height="90" width="770">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>800</width>
+					<width>770</width>
 					<height>90</height>
-					<texture border="5">ListNF.png</texture>
+					<texture border="5">MenuItemNF.png</texture>
 				</control>
 				<control type="image">
 					<posx>10</posx>
@@ -74,10 +74,10 @@
 				<control type="label">
 					<posx>100</posx>
 					<posy>0</posy>
-					<width>680</width>
+					<width>660</width>
 					<height>40</height>
 					<font>font14</font>
-					<textcolor>grey2</textcolor>
+					<textcolor>black</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -86,10 +86,10 @@
 				<control type="label">
 					<posx>100</posx>
 					<posy>28</posy>
-					<width>680</width>
+					<width>660</width>
 					<height>40</height>
 					<font>font24_title</font>
-					<textcolor>grey2</textcolor>
+					<textcolor>black</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -111,12 +111,12 @@
 					<description>Progress</description>
 					<posx>200</posx>
 					<posy>65</posy>
-					<width>480</width>
+					<width>470</width>
 					<height>15</height>
 					<info>ListItem.Progress</info>
 				</control>
 				<control type="label">
-					<posx>680</posx>
+					<posx>670</posx>
 					<posy>65</posy>
 					<width>100</width>
 					<height>20</height>
@@ -128,13 +128,13 @@
 					<visible>ListItem.HasEpg</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout height="90" width="800">
+			<focusedlayout height="90" width="770">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>800</width>
+					<width>770</width>
 					<height>90</height>
-					<texture border="5">ListFO.png</texture>
+					<texture border="5">MenuItemNF.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
@@ -148,7 +148,7 @@
 				<control type="label">
 					<posx>100</posx>
 					<posy>0</posy>
-					<width>680</width>
+					<width>660</width>
 					<height>40</height>
 					<font>font14</font>
 					<textcolor>black</textcolor>
@@ -160,7 +160,7 @@
 				<control type="label">
 					<posx>100</posx>
 					<posy>28</posy>
-					<width>680</width>
+					<width>660</width>
 					<height>40</height>
 					<font>font24_title</font>
 					<textcolor>black</textcolor>
@@ -185,12 +185,12 @@
 					<description>Progress</description>
 					<posx>200</posx>
 					<posy>65</posy>
-					<width>480</width>
+					<width>470</width>
 					<height>15</height>
 					<info>ListItem.Progress</info>
 				</control>
 				<control type="label">
-					<posx>680</posx>
+					<posx>670</posx>
 					<posy>65</posy>
 					<width>100</width>
 					<height>20</height>
@@ -203,6 +203,24 @@
 				</control>
 			</focusedlayout>
 		</control>
-
+		<control type="scrollbar" id="60">
+			<posx>770</posx>
+			<posy>60</posy>
+			<width>29</width>
+			<height>720</height>
+			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+			<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>ScrollBarNib.png</textureslidernib>
+			<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+			<onleft>60</onleft>
+			<onright>60</onright>
+			<ondown>60</ondown>
+			<onup>60</onup>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<animation effect="fade" time="150">Visible</animation>
+			<animation effect="fade" time="150">Hidden</animation>
+		</control>
 	</controls>
 </window>
