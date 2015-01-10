@@ -1,5 +1,4 @@
 TARGET=Textures.xbt
-XBMCTEX=@abs_top_srcdir@/tools/TexturePacker/TexturePacker
 
 IMAGES := $(shell find . -name "*jpg")
 IMAGES += $(shell find . -name "*png")
@@ -9,13 +8,14 @@ all: $(TARGET)
 
 .PHONY: force
 
-$(TARGET): $(XBMCTEX) $(IMAGES)
-	$(XBMCTEX) -input . -output $(TARGET)
+$(TARGET): $(IMAGES)
+ifeq (@ARCH@,arm)
+	@TEXTUREPACKER@ -use_none -input . -output $(TARGET)
+else
+	@TEXTUREPACKER@ -input . -output $(TARGET)
 
-$(XBMCTEX): force
-	$(MAKE) -C @abs_top_srcdir@/tools/TexturePacker
+endif
 
 clean:
 	rm -f $(TARGET)
 distclean: clean
-
